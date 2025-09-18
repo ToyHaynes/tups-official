@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tups Pro - Professional Rhythm Training App</title>
-    <meta name="description" content="Master rhythm with Tups Pro - Professional MIDI-based rhythm training app for musicians. 4 unique exercises, ultra-low latency, and precision timing.">
-    
+    <title>TUPS - Professional Rhythm Training App</title>
+    <meta name="description" content="Master your internal TIME with TUPS - Professional MIDI-based rhythm training app featuring 4 legendary exercises reimagined for modern musicians.">
+
     <!-- Favicons and Meta -->
     <meta name="theme-color" content="#1A1A1A">
-    <meta property="og:title" content="Tups Pro - Professional Rhythm Training App">
-    <meta property="og:description" content="Master rhythm with professional MIDI-based exercises">
+    <meta property="og:title" content="TUPS - Professional Rhythm Training App">
+    <meta property="og:description" content="Master your internal TIME with 4 professional rhythm exercises">
     <meta property="og:type" content="website">
-    
+    <meta property="og:url" content="https://tupstheapp.com">
+
     <style>
         /* CSS Reset & Base */
         * {
@@ -19,7 +20,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -27,7 +28,7 @@
             background: #1A1A1A;
             overflow-x: hidden;
         }
-        
+
         /* Header */
         header {
             background: rgba(26, 26, 26, 0.95);
@@ -38,7 +39,7 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -47,32 +48,49 @@
             justify-content: space-between;
             align-items: center;
         }
-        
-        .logo {
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
             font-size: 1.8rem;
             font-weight: 700;
             color: #ffffff;
-            text-decoration: none;
             letter-spacing: -0.02em;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-        
+
         .nav-links a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s ease;
         }
-        
+
         .nav-links a:hover {
             color: #ffffff;
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -82,7 +100,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -93,12 +111,12 @@
             background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
             animation: pulse 8s ease-in-out infinite;
         }
-        
+
         @keyframes pulse {
             0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.5; }
             50% { transform: scale(1.1) rotate(180deg); opacity: 0.8; }
         }
-        
+
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -110,7 +128,7 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .hero-text h1 {
             font-size: 3.5rem;
             font-weight: 800;
@@ -121,20 +139,52 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #3B82F6;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
         .hero-text p {
             font-size: 1.25rem;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 2rem;
             max-width: 500px;
+            line-height: 1.7;
         }
-        
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3B82F6;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
         .cta-buttons {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
         }
-        
+
         .btn {
             padding: 1rem 2rem;
             border: none;
@@ -148,37 +198,37 @@
             gap: 0.5rem;
             cursor: pointer;
         }
-        
+
         .btn-primary {
             background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
             color: white;
             box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
         }
-        
+
         .btn-secondary {
             background: rgba(255, 255, 255, 0.1);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
         }
-        
+
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
-        
+
         .hero-visual {
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
         }
-        
+
         .phone-mockup {
             width: 300px;
             height: 600px;
@@ -189,7 +239,7 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             overflow: hidden;
         }
-        
+
         .phone-screen {
             width: calc(100% - 20px);
             height: calc(100% - 40px);
@@ -199,19 +249,19 @@
             position: relative;
             overflow: hidden;
         }
-        
-        /* Features Section */
-        .features {
+
+        /* Exercises Section */
+        .exercises {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 4rem;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             font-weight: 700;
@@ -221,21 +271,21 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .section-title p {
             font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.7);
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         .exercises-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-bottom: 4rem;
         }
-        
+
         .exercise-card {
             background: rgba(45, 45, 45, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -244,40 +294,99 @@
             text-align: center;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
         }
-        
+
+        .exercise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .exercise-card:hover::before {
+            opacity: 1;
+        }
+
         .exercise-card:hover {
             transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .exercise-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
             display: block;
         }
-        
+
         .exercise-card h3 {
             font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
             color: #ffffff;
         }
-        
+
+        .exercise-subtitle {
+            font-size: 0.9rem;
+            color: #3B82F6;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         .exercise-card p {
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.6;
+            margin-bottom: 1.5rem;
         }
-        
-        /* Features List */
-        .features-list {
+
+        .exercise-features {
+            list-style: none;
+            text-align: left;
+        }
+
+        .exercise-features li {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .exercise-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #3B82F6;
+            font-weight: bold;
+        }
+
+        /* Technical Features */
+        .tech-features {
+            background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
+            padding: 6rem 2rem;
+        }
+
+        .tech-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
-        
+
         .feature-item {
             display: flex;
             align-items: flex-start;
@@ -286,84 +395,131 @@
             background: rgba(45, 45, 45, 0.5);
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
-        
+
+        .feature-item:hover {
+            transform: translateY(-2px);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
         .feature-icon {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
-            border-radius: 10px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             flex-shrink: 0;
         }
-        
+
         .feature-content h4 {
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 0.5rem;
             color: #ffffff;
+            font-size: 1.1rem;
         }
-        
+
         .feature-content p {
             color: rgba(255, 255, 255, 0.8);
             font-size: 0.95rem;
         }
-        
+
+        .feature-metric {
+            font-weight: 700;
+            color: #3B82F6;
+        }
+
         /* Download Section */
         .download {
             background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
             padding: 4rem 2rem;
             text-align: center;
         }
-        
+
         .download-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .download h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: #ffffff;
         }
-        
+
         .download p {
             font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 2rem;
         }
-        
+
         .store-badges {
             display: flex;
             justify-content: center;
             gap: 1rem;
             flex-wrap: wrap;
+            margin-bottom: 2rem;
         }
-        
+
         .store-badge {
             display: inline-block;
             transition: transform 0.2s ease;
+            position: relative;
         }
-        
+
         .store-badge:hover {
             transform: scale(1.05);
         }
-        
+
         .store-badge img {
             height: 60px;
             border-radius: 8px;
         }
-        
+
+        .status-info {
+            background: rgba(45, 45, 45, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .status-info h4 {
+            color: #3B82F6;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .status-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: left;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .status-icon {
+            font-size: 1rem;
+        }
+
         /* Footer */
         footer {
             background: #0A0A0A;
             padding: 3rem 2rem 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -371,13 +527,13 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .footer-section h4 {
             font-weight: 600;
             margin-bottom: 1rem;
             color: #ffffff;
         }
-        
+
         .footer-section a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
@@ -385,11 +541,11 @@
             margin-bottom: 0.5rem;
             transition: color 0.2s ease;
         }
-        
+
         .footer-section a:hover {
             color: #ffffff;
         }
-        
+
         .footer-bottom {
             max-width: 1200px;
             margin: 2rem auto 0;
@@ -398,7 +554,7 @@
             text-align: center;
             color: rgba(255, 255, 255, 0.6);
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content {
@@ -406,23 +562,32 @@
                 text-align: center;
                 gap: 2rem;
             }
-            
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .cta-buttons {
                 justify-content: center;
             }
-            
+
             .phone-mockup {
                 width: 250px;
                 height: 500px;
             }
+
+            .hero-stats {
+                justify-content: center;
+            }
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
         }
     </style>
 </head>
@@ -430,10 +595,13 @@
     <!-- Header -->
     <header>
         <nav>
-            <a href="#" class="logo">Tups Pro</a>
+            <a href="#" class="logo-container">
+                <div class="logo-icon">🎵</div>
+                <div class="logo-text">TUPS</div>
+            </a>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
                 <li><a href="#exercises">Exercises</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#download">Download</a></li>
                 <li><a href="privacy-policy.html">Privacy</a></li>
             </ul>
@@ -444,27 +612,43 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
+                <div class="subtitle">4 Professional Rhythm Tools</div>
                 <h1>Master Your Internal TIME</h1>
-                <p>Professional MIDI-based rhythm training designed for musicians who demand perfection. 4 legendary methods reimagined with ultra-low latency and rock-solid stability.</p>
+                <p>Professional MIDI-based rhythm training designed for musicians who demand perfection. Legendary methods reimagined with cutting-edge technology.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Core Exercises</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt;5ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2-12</span>
+                        <span class="stat-label">Tuplets</span>
+                    </div>
+                </div>
+
                 <div class="cta-buttons">
                     <a href="#download" class="btn btn-primary">
-                        📱 Download Now
+                        📱 Get Started
                     </a>
-                    <a href="#features" class="btn btn-secondary">
-                        ✨ Learn More
+                    <a href="#exercises" class="btn btn-secondary">
+                        🎯 Explore Features
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="phone-mockup">
                     <div class="phone-screen">
-                        <!-- App preview placeholder -->
                         <div style="padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                             <div style="text-align: center; padding: 20px 0;">
                                 <div style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">♩ = 120 BPM</div>
                                 <div style="font-size: 0.9rem; color: #999;">4/4 Time</div>
                             </div>
-                            
+
                             <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
                                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 200px;">
                                     <div style="width: 40px; height: 40px; background: #3B82F6; border-radius: 50%; animation: beat 1s infinite;"></div>
@@ -473,7 +657,7 @@
                                     <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%;"></div>
                                 </div>
                             </div>
-                            
+
                             <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px;">
                                 <div style="color: #fff; font-size: 0.8rem;">TUPS</div>
                                 <div style="color: #fff; font-size: 0.8rem;">A&R+</div>
@@ -487,85 +671,123 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
+    <!-- Exercises Section -->
+    <section class="exercises" id="exercises">
         <div class="section-title">
-            <h2>Four Professional Exercises</h2>
-            <p>Master every aspect of rhythm with our scientifically designed training modules</p>
+            <h2>Four Legendary Methods Reimagined</h2>
+            <p>Professional-grade exercises built on cutting-edge MIDI technology for precision training</p>
         </div>
-        
-        <div class="exercises-grid" id="exercises">
+
+        <div class="exercises-grid">
             <div class="exercise-card">
                 <span class="exercise-icon">🥁</span>
                 <h3>TUPS</h3>
-                <p><strong>Tuplet Explorer</strong><br>Master 2-12 tuplet subdivisions with individual note control. Sequence mode and silence training for advanced ear development.</p>
+                <div class="exercise-subtitle">Tuplet Explorer</div>
+                <p>Master all tuplet subdivisions from 2-12 with individual note control and advanced ear training.</p>
+                <ul class="exercise-features">
+                    <li>Individual note muting/unmuting</li>
+                    <li>Sequence mode with visual feedback</li>
+                    <li>Silence mode for ear training</li>
+                    <li>Smart BPM validation</li>
+                </ul>
             </div>
-            
+
             <div class="exercise-card">
                 <span class="exercise-icon">🎵</span>
                 <h3>A&R+</h3>
-                <p><strong>Melody Creator</strong><br>Create 24-note melodic patterns across multiple time signatures. Advanced sticking notation and MIDI export capabilities.</p>
+                <div class="exercise-subtitle">Melody Creator</div>
+                <p>Create 24-note accent patterns with advanced sticking notation across multiple time signatures.</p>
+                <ul class="exercise-features">
+                    <li>Multi-bar support (1-16 bars)</li>
+                    <li>R/L sticking notation</li>
+                    <li>6 time signatures supported</li>
+                    <li>MIDI export capability</li>
+                </ul>
             </div>
-            
+
             <div class="exercise-card">
                 <span class="exercise-icon">📊</span>
                 <h3>PATTERN</h3>
-                <p><strong>Pattern Creator</strong><br>Apply R/L/K/H patterns to all tuplet types. Advanced transformations with Shadow and Anti modes for complex variations.</p>
+                <div class="exercise-subtitle">Pattern Creator</div>
+                <p>Apply R/L/K/H patterns across all tuplet types with advanced transformations and smart assignment.</p>
+                <ul class="exercise-features">
+                    <li>Dual modes: Normal + Grouping</li>
+                    <li>Shadow & Anti transformations</li>
+                    <li>Start From/End On control</li>
+                    <li>Real-time pattern visualization</li>
+                </ul>
             </div>
-            
+
             <div class="exercise-card">
                 <span class="exercise-icon">🔬</span>
                 <h3>TUP LAB</h3>
-                <p><strong>Drum Pattern Lab</strong><br>Advanced grouping and pattern transformation laboratory. Professional-grade pattern management and analysis.</p>
+                <div class="exercise-subtitle">Drum Pattern Lab</div>
+                <p>Advanced grouping and pattern transformation laboratory for professional-grade pattern management.</p>
+                <ul class="exercise-features">
+                    <li>Complex multi-bar organization</li>
+                    <li>Advanced pattern transformations</li>
+                    <li>Color-coded assignments</li>
+                    <li>Professional timing controls</li>
+                </ul>
             </div>
         </div>
-        
-        <div class="features-list">
-            <div class="feature-item">
-                <div class="feature-icon">⚡</div>
-                <div class="feature-content">
-                    <h4>Ultra-Low Latency</h4>
-                    <p>Professional MIDI engine with <5ms precision timing. Perfect sync guaranteed.</p>
-                </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="tech-features" id="features">
+        <div class="tech-content">
+            <div class="section-title">
+                <h2>Professional-Grade Technology</h2>
+                <p>Built on industry-standard MIDI technology with uncompromising precision and performance</p>
             </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">🎯</div>
-                <div class="feature-content">
-                    <h4>Rock-Solid Stability</h4>
-                    <p>No drift over hours of use. Optimized for extended practice sessions.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-content">
+                        <h4>Ultra-Low Latency</h4>
+                        <p>Professional MIDI engine with <span class="feature-metric">&lt;5ms</span> precision timing. Perfect sync guaranteed for serious practice.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">🎼</div>
-                <div class="feature-content">
-                    <h4>Professional Sound</h4>
-                    <p>High-quality SF2 samples and comprehensive sound bank for realistic practice.</p>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-content">
+                        <h4>Rock-Solid Stability</h4>
+                        <p>No drift over hours of use. Master timer coordination ensures consistent performance during extended sessions.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">📱</div>
-                <div class="feature-content">
-                    <h4>Battery Optimized</h4>
-                    <p>Efficient performance with <3% battery drain per hour of practice.</p>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎼</div>
+                    <div class="feature-content">
+                        <h4>Professional Sound Bank</h4>
+                        <p>High-quality SF2 samples with comprehensive MIDI note mapping for realistic practice experience.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">🎛️</div>
-                <div class="feature-content">
-                    <h4>Master Control</h4>
-                    <p>Global metronome with universal BPM and time signature synchronization.</p>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔋</div>
+                    <div class="feature-content">
+                        <h4>Battery Optimized</h4>
+                        <p>Efficient performance with <span class="feature-metric">&lt;3%</span> battery drain per hour and <span class="feature-metric">&lt;50MB</span> memory footprint.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">💾</div>
-                <div class="feature-content">
-                    <h4>Pattern Export</h4>
-                    <p>Save and export your patterns as standard MIDI files for further use.</p>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎛️</div>
+                    <div class="feature-content">
+                        <h4>Master Control System</h4>
+                        <p>Global metronome with universal BPM and time signature synchronization across all exercises.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💾</div>
+                    <div class="feature-content">
+                        <h4>Pattern Export</h4>
+                        <p>Save and export your patterns as standard MIDI files with comprehensive preset management system.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -574,16 +796,38 @@
     <!-- Download Section -->
     <section class="download" id="download">
         <div class="download-content">
-            <h2>Ready to Master Rhythm?</h2>
-            <p>Join thousands of musicians who have elevated their timing with Tups Pro. Coming soon to iOS and Android - currently in final testing.</p>
-            
+            <h2>Ready to Master Your TIME?</h2>
+            <p>Join the next generation of musicians training with precision MIDI technology. Currently in final testing phase.</p>
+
             <div class="store-badges">
-                <a href="https://apps.apple.com/app/tups-pro" class="store-badge" title="Coming Soon">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EComing Soon%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Coming Soon on App Store">
+                <a href="https://apps.apple.com/app/tups" class="store-badge" title="Coming Soon">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%2368ff68' text-anchor='middle'%3ETestFlight Ready%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EApp Store%3C/text%3E%3C/svg%3E" alt="TestFlight Ready on App Store">
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.tups.app" class="store-badge" title="In Testing">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='white' text-anchor='middle'%3EIn Testing%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="In Testing on Google Play">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%23ff9500' text-anchor='middle'%3EIn Testing%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="In Testing on Google Play">
                 </a>
+            </div>
+
+            <div class="status-info">
+                <h4>🚀 Current Release Status</h4>
+                <div class="status-list">
+                    <div class="status-item">
+                        <span class="status-icon">✅</span>
+                        <span>Core functionality: 100% Complete</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-icon">✅</span>
+                        <span>iOS TestFlight Ready</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-icon">🔄</span>
+                        <span>Android Closed Testing</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-icon">🧪</span>
+                        <span>RevenueCat Testing Phase</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -592,43 +836,37 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Tups Pro</h4>
-                <a href="#features">Features</a>
+                <h4>TUPS</h4>
                 <a href="#exercises">Exercises</a>
+                <a href="#features">Features</a>
                 <a href="#download">Download</a>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Legal</h4>
                 <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="terms-of-service.html">Terms of Service</a>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Support</h4>
                 <a href="mailto:support@tupstheapp.com">Contact Support</a>
                 <a href="mailto:feedback@tupstheapp.com">Send Feedback</a>
             </div>
-            
+
             <div class="footer-section">
-                <h4>Connect</h4>
+                <h4>Technology</h4>
                 <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
-                    Professional rhythm training<br>
-                    for serious musicians
+                    Built with Flutter & MIDI Pro<br>
+                    Professional-grade timing engine<br>
+                    Industry-standard architecture
                 </p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>&copy; 2024 Tups Pro. All rights reserved. | Made with ❤️ for musicians worldwide</p>
+            <p>&copy; 2024 TUPS. All rights reserved. | Made with ❤️ for musicians worldwide</p>
         </div>
     </footer>
-
-    <style>
-        @keyframes beat {
-            0%, 100% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.2); opacity: 1; }
-        }
-    </style>
 </body>
 </html>
