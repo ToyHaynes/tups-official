@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUPS - Professional Rhythm Training App</title>
-    <meta name="description" content="Master your internal TIME with TUPS - Professional MIDI-based rhythm training app featuring 4 legendary exercises reimagined for modern musicians.">
+    <title>TUPS - Master Your Internal TIME</title>
+    <meta name="description" content="Professional MIDI-based rhythm training with 4 legendary exercises. Random silence metronome, tuplet mastery, and real-world applications for serious musicians.">
 
     <!-- Favicons and Meta -->
     <meta name="theme-color" content="#1A1A1A">
-    <meta property="og:title" content="TUPS - Professional Rhythm Training App">
-    <meta property="og:description" content="Master your internal TIME with 4 professional rhythm exercises">
+    <meta property="og:title" content="TUPS - Master Your Internal TIME">
+    <meta property="og:description" content="Professional rhythm training with cutting-edge MIDI technology">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tupstheapp.com">
 
@@ -85,10 +85,11 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s ease;
+            font-size: 0.95rem;
         }
 
         .nav-links a:hover {
-            color: #ffffff;
+            color: #3B82F6;
         }
 
         /* Hero Section */
@@ -222,39 +223,16 @@
             transform: translateY(-2px);
         }
 
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .phone-mockup {
-            width: 300px;
-            height: 600px;
-            background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
-            border-radius: 30px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-        }
-
-        .phone-screen {
-            width: calc(100% - 20px);
-            height: calc(100% - 40px);
-            background: #1A1A1A;
-            border-radius: 25px;
-            margin: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Exercises Section */
-        .exercises {
+        /* Section Styling */
+        .section {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .section-alt {
+            background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
+            padding: 6rem 0;
         }
 
         .section-title {
@@ -279,19 +257,18 @@
             margin: 0 auto;
         }
 
+        /* Exercise Cards */
         .exercises-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-bottom: 4rem;
         }
 
         .exercise-card {
             background: rgba(45, 45, 45, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
-            padding: 2rem;
-            text-align: center;
+            padding: 2.5rem;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             position: relative;
@@ -317,229 +294,155 @@
         .exercise-card:hover {
             transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
 
         .exercise-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
             display: block;
+            text-align: center;
         }
 
         .exercise-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             color: #ffffff;
+            text-align: center;
         }
 
         .exercise-subtitle {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #3B82F6;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            text-align: center;
         }
 
-        .exercise-card p {
+        .exercise-description {
             color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1rem;
         }
 
-        .exercise-features {
-            list-style: none;
-            text-align: left;
+        .exercise-details {
+            margin-top: 2rem;
         }
 
-        .exercise-features li {
-            color: rgba(255, 255, 255, 0.7);
+        .detail-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            border-left: 4px solid #3B82F6;
+        }
+
+        .detail-section h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #3B82F6;
+        }
+
+        .detail-section p {
+            color: rgba(255, 255, 255, 0.8);
             font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.2rem;
+            line-height: 1.6;
         }
 
-        .exercise-features li::before {
-            content: '✓';
+        /* Feature Lists */
+        .feature-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .feature-list li {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .feature-list li::before {
+            content: '•';
             position: absolute;
             left: 0;
             color: #3B82F6;
             font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        /* How to Practice Section */
-        .how-to-practice {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
-        }
-
-        .practice-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .philosophy-grid {
+        /* Metronome Features Section */
+        .metronome-features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
+            margin-top: 3rem;
         }
 
-        .philosophy-card {
+        .metronome-card {
             background: rgba(45, 45, 45, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             padding: 2rem;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            text-align: center;
         }
 
-        .philosophy-card:hover {
+        .metronome-card:hover {
             transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .philosophy-icon {
+        .metronome-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .philosophy-card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .philosophy-card p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .practice-tip {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .practice-tip strong {
             color: #3B82F6;
         }
 
-        /* Training Guide */
-        .training-guide {
-            margin: 4rem 0;
-            background: rgba(45, 45, 45, 0.3);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .training-guide h3 {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            color: #ffffff;
-        }
-
-        .training-steps {
+        /* Applications Grid */
+        .applications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
-        .step-card {
+        .application-card {
             background: rgba(45, 45, 45, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 2rem;
-            position: relative;
             transition: all 0.3s ease;
         }
 
-        .step-card:hover {
-            transform: translateY(-3px);
+        .application-card:hover {
+            transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .step-number {
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: white;
-        }
-
-        .step-content h4 {
-            font-size: 1.2rem;
-            font-weight: 700;
+        .application-icon {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: #ffffff;
-            margin-top: 0.5rem;
-        }
-
-        .step-content p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .step-exercises {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .step-exercises span {
-            background: rgba(59, 130, 246, 0.2);
-            color: #3B82F6;
-            padding: 0.3rem 0.8rem;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        /* Screenshots Section */
-        .screenshots-section {
-            margin: 4rem 0 2rem;
+            display: block;
             text-align: center;
         }
 
-        .screenshots-section h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-
-        .screenshots-section p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2rem;
-        }
-
+        /* Screenshots */
         .screenshots-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-top: 3rem;
         }
 
         .screenshot-card {
@@ -553,7 +456,7 @@
         .screenshot-card:hover {
             transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .screenshot-placeholder {
@@ -571,21 +474,8 @@
             margin-bottom: 1rem;
         }
 
-        .placeholder-text {
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .placeholder-text small {
-            display: block;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.3);
-            margin-top: 0.5rem;
-        }
-
         .screenshot-caption {
             padding: 1.5rem;
-            text-align: left;
         }
 
         .screenshot-caption h4 {
@@ -598,69 +488,6 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
             line-height: 1.5;
-        }
-
-        /* Technical Features */
-        .tech-features {
-            background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
-            padding: 6rem 2rem;
-        }
-
-        .tech-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: rgba(45, 45, 45, 0.5);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateY(-2px);
-            border-color: rgba(59, 130, 246, 0.3);
-        }
-
-        .feature-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .feature-content h4 {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-            font-size: 1.1rem;
-        }
-
-        .feature-content p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.95rem;
-        }
-
-        .feature-metric {
-            font-weight: 700;
-            color: #3B82F6;
         }
 
         /* Download Section */
@@ -699,7 +526,6 @@
         .store-badge {
             display: inline-block;
             transition: transform 0.2s ease;
-            position: relative;
         }
 
         .store-badge:hover {
@@ -740,10 +566,6 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
-        .status-icon {
-            font-size: 1rem;
-        }
-
         /* Footer */
         footer {
             background: #0A0A0A;
@@ -774,7 +596,7 @@
         }
 
         .footer-section a:hover {
-            color: #ffffff;
+            color: #3B82F6;
         }
 
         .footer-bottom {
@@ -802,17 +624,12 @@
                 display: none;
             }
 
-            .cta-buttons {
-                justify-content: center;
-            }
-
-            .phone-mockup {
-                width: 250px;
-                height: 500px;
-            }
-
             .hero-stats {
                 justify-content: center;
+            }
+
+            .section {
+                padding: 4rem 1rem;
             }
         }
 
@@ -832,8 +649,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#exercises">Exercises</a></li>
-                <li><a href="#how-to-practice">How to Practice</a></li>
-                <li><a href="#features">Technology</a></li>
+                <li><a href="#metronome">Metronome</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#science">The Science</a></li>
                 <li><a href="#download">Download</a></li>
             </ul>
         </nav>
@@ -843,9 +661,9 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <div class="subtitle">4 Professional Rhythm Tools</div>
+                <div class="subtitle">Professional Rhythm Training</div>
                 <h1>Master Your Internal TIME</h1>
-                <p>Professional MIDI-based rhythm training designed for musicians who demand perfection. Legendary methods reimagined with cutting-edge technology.</p>
+                <p>4 legendary exercises reimagined with cutting-edge MIDI technology. Random silence metronome, tuplet mastery, and real-world applications.</p>
 
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -854,11 +672,11 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">&lt;5ms</span>
-                        <span class="stat-label">Latency</span>
+                        <span class="stat-label">Precision</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">2-12</span>
-                        <span class="stat-label">Tuplets</span>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Possibilities</span>
                     </div>
                 </div>
 
@@ -867,13 +685,13 @@
                         📱 Get Started
                     </a>
                     <a href="#exercises" class="btn btn-secondary">
-                        🎯 Explore Features
+                        🎯 Explore
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
+                <div style="width: 300px; height: 600px; background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%); border-radius: 30px; border: 2px solid rgba(255, 255, 255, 0.1); position: relative; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); overflow: hidden;">
+                    <div style="width: calc(100% - 20px); height: calc(100% - 40px); background: #1A1A1A; border-radius: 25px; margin: 10px; position: relative; overflow: hidden;">
                         <div style="padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                             <div style="text-align: center; padding: 20px 0;">
                                 <div style="font-size: 1.2rem; color: #fff; margin-bottom: 10px;">♩ = 120 BPM</div>
@@ -902,271 +720,317 @@
         </div>
     </section>
 
-    <!-- Exercises Section -->
-    <section class="exercises" id="exercises">
+    <!-- Exercises Deep Dive -->
+    <section class="section" id="exercises">
         <div class="section-title">
-            <h2>Four Legendary Methods Reimagined</h2>
-            <p>Professional-grade exercises built on cutting-edge MIDI technology for precision training</p>
+            <h2>4 Professional Exercises</h2>
+            <p>Each exercise targets specific aspects of rhythm development with proven methodology</p>
         </div>
 
         <div class="exercises-grid">
+            <!-- TUPS Exercise -->
             <div class="exercise-card">
                 <span class="exercise-icon">🥁</span>
                 <h3>TUPS</h3>
                 <div class="exercise-subtitle">Tuplet Explorer</div>
-                <p>Master all tuplet subdivisions from 2-12 with individual note control and advanced ear training.</p>
-                <ul class="exercise-features">
-                    <li>Individual note muting/unmuting</li>
-                    <li>Sequence mode with visual feedback</li>
-                    <li>Silence mode for ear training</li>
-                    <li>Smart BPM validation</li>
-                </ul>
+                <div class="exercise-description">
+                    Master your internal metronome through progressive tuplet training. Build unshakeable timing from 2-12 subdivisions.
+                </div>
+
+                <div class="exercise-details">
+                    <div class="detail-section">
+                        <h4>🎯 What It Does</h4>
+                        <p>Develops internal timing precision through individual tuplet control. Each subdivision creates unique neural pathways for rhythm recognition.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🧠 How to Practice</h4>
+                        <ul class="feature-list">
+                            <li>Start with simple 2-4 tuplets at comfortable tempos</li>
+                            <li>Use individual muting to isolate each subdivision</li>
+                            <li>Practice with silence mode to test internal timing</li>
+                            <li>Progress to complex 9-12 tuplets gradually</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🚀 Real-World Applications</h4>
+                        <p>Essential for session work, complex time signatures, and developing the internal clock that separates amateur from professional timing.</p>
+                    </div>
+                </div>
             </div>
 
+            <!-- A&R+ Exercise -->
             <div class="exercise-card">
                 <span class="exercise-icon">🎵</span>
                 <h3>A&R+</h3>
                 <div class="exercise-subtitle">Melody Creator</div>
-                <p>Create 24-note accent patterns with advanced sticking notation across multiple time signatures.</p>
-                <ul class="exercise-features">
-                    <li>Multi-bar support (1-16 bars)</li>
-                    <li>R/L sticking notation</li>
-                    <li>6 time signatures supported</li>
-                    <li>MIDI export capability</li>
-                </ul>
+                <div class="exercise-description">
+                    Create sophisticated accent patterns with sticking notation. Build melodic awareness across multiple time signatures.
+                </div>
+
+                <div class="exercise-details">
+                    <div class="detail-section">
+                        <h4>🎯 What It Does</h4>
+                        <p>Develops musical accent patterns and coordination through R/L sticking notation. Creates long-form musical thinking across multiple bars.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🧠 How to Practice</h4>
+                        <ul class="feature-list">
+                            <li>Begin with simple 4-bar accent patterns in 4/4</li>
+                            <li>Explore R/L sticking combinations</li>
+                            <li>Practice in complex time signatures (5/4, 7/4)</li>
+                            <li>Export patterns as MIDI for further development</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🚀 Real-World Applications</h4>
+                        <p>Perfect for composition, jazz performance, and developing the melodic sense that makes rhythm musical rather than mechanical.</p>
+                    </div>
+                </div>
             </div>
 
+            <!-- PATTERN Exercise -->
             <div class="exercise-card">
                 <span class="exercise-icon">📊</span>
                 <h3>PATTERN</h3>
                 <div class="exercise-subtitle">Pattern Creator</div>
-                <p>Apply R/L/K/H patterns across all tuplet types with advanced transformations and smart assignment.</p>
-                <ul class="exercise-features">
-                    <li>Dual modes: Normal + Grouping</li>
-                    <li>Shadow & Anti transformations</li>
-                    <li>Start From/End On control</li>
-                    <li>Real-time pattern visualization</li>
-                </ul>
+                <div class="exercise-description">
+                    Apply R/L/K/H patterns across all tuplet types. Master limb independence through Shadow and Anti transformations.
+                </div>
+
+                <div class="exercise-details">
+                    <div class="detail-section">
+                        <h4>🎯 What It Does</h4>
+                        <p>Develops limb independence through systematic pattern application. Creates neural pathway diversity through transformation exercises.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🧠 How to Practice</h4>
+                        <ul class="feature-list">
+                            <li>Start with simple R-L patterns in normal mode</li>
+                            <li>Use Start From/End On for pattern variations</li>
+                            <li>Practice Shadow mode for reverse coordination</li>
+                            <li>Master Anti mode for hand/foot swapping</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>🚀 Real-World Applications</h4>
+                        <p>Essential for drummers, coordination challenges, and developing the ambidextrous skills needed for advanced performance.</p>
+                    </div>
+                </div>
             </div>
 
+            <!-- TUP LAB Exercise -->
             <div class="exercise-card">
                 <span class="exercise-icon">🔬</span>
                 <h3>TUP LAB</h3>
-                <div class="exercise-subtitle">Drum Pattern Lab</div>
-                <p>Advanced grouping and pattern transformation laboratory for professional-grade pattern management.</p>
-                <ul class="exercise-features">
-                    <li>Complex multi-bar organization</li>
-                    <li>Advanced pattern transformations</li>
-                    <li>Color-coded assignments</li>
-                    <li>Professional timing controls</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to Practice Section -->
-    <section class="how-to-practice" id="how-to-practice">
-        <div class="practice-content">
-            <div class="section-title">
-                <h2>The Science of Rhythm Training</h2>
-                <p>Understanding the methodology behind professional timing development</p>
-            </div>
-
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <div class="philosophy-icon">🧠</div>
-                    <h3>Internal TIME Mastery</h3>
-                    <p>Rhythm isn't just about keeping time—it's about developing your internal metronome. TUPS trains your brain to feel subdivisions naturally, building unshakeable timing from the inside out.</p>
-                    <div class="practice-tip">
-                        <strong>💡 Practice Tip:</strong> Start with simple tuplets, focus on feeling each subdivision before adding complexity.
-                    </div>
+                <div class="exercise-subtitle">Rhythm Laboratory</div>
+                <div class="exercise-description">
+                    Advanced pattern relationship exploration. Discover rhythmic harmony through color-coded pattern visualization.
                 </div>
 
-                <div class="philosophy-card">
-                    <div class="philosophy-icon">⚡</div>
-                    <h3>Precision Through Technology</h3>
-                    <p>Traditional metronomes drift and lag. Our MIDI engine delivers &lt;5ms precision—the difference between amateur and professional timing. Every click is perfectly placed, training your ear to hear true accuracy.</p>
-                    <div class="practice-tip">
-                        <strong>💡 Practice Tip:</strong> Use silence mode to test your internal timing without the metronome crutch.
-                    </div>
-                </div>
-
-                <div class="philosophy-card">
-                    <div class="philosophy-icon">🎯</div>
-                    <h3>Legendary Methods Evolved</h3>
-                    <p>We've taken time-tested rhythm training concepts and reimagined them with modern technology. From tuplet exploration to pattern transformation—these are methods that have trained professionals for decades.</p>
-                    <div class="practice-tip">
-                        <strong>💡 Practice Tip:</strong> Master each exercise individually before combining techniques.
-                    </div>
-                </div>
-            </div>
-
-            <div class="training-guide">
-                <h3>🎵 Progressive Training System</h3>
-                <div class="training-steps">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Foundation Building</h4>
-                            <p>Start with <strong>TUPS</strong> - Master basic tuplet subdivisions (2-5) at comfortable tempos. Focus on clean note separation and internal pulse.</p>
-                            <div class="step-exercises">
-                                <span>• 2-3-4-5 tuplets</span>
-                                <span>• 80-100 BPM</span>
-                                <span>• Individual note control</span>
-                            </div>
-                        </div>
+                <div class="exercise-details">
+                    <div class="detail-section">
+                        <h4>🎯 What It Does</h4>
+                        <p>Explores advanced pattern relationships and rhythmic mathematics. Creates understanding of complex multi-bar structures.</p>
                     </div>
 
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Pattern Recognition</h4>
-                            <p>Use <strong>A&R+</strong> to develop melodic awareness. Create simple accent patterns and focus on the relationship between downbeats and subdivisions.</p>
-                            <div class="step-exercises">
-                                <span>• 4-8 bar patterns</span>
-                                <span>• Simple time signatures</span>
-                                <span>• R/L sticking notation</span>
-                            </div>
-                        </div>
+                    <div class="detail-section">
+                        <h4>🧠 How to Practice</h4>
+                        <ul class="feature-list">
+                            <li>Experiment with pattern combinations</li>
+                            <li>Study color-coded pattern relationships</li>
+                            <li>Explore multi-bar grouping concepts</li>
+                            <li>Use as composition and analysis tool</li>
+                        </ul>
                     </div>
 
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Advanced Integration</h4>
-                            <p><strong>PATTERN</strong> mode lets you apply complex R/L/K/H combinations. Start with normal mode, then explore grouping for multi-bar complexity.</p>
-                            <div class="step-exercises">
-                                <span>• Shadow & Anti modes</span>
-                                <span>• Start From/End On</span>
-                                <span>• Multi-tuplet application</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h4>Professional Mastery</h4>
-                            <p><strong>TUP LAB</strong> is for advanced practitioners. Experiment with complex groupings, pattern relationships, and rhythm harmony concepts.</p>
-                            <div class="step-exercises">
-                                <span>• Complex multi-bar patterns</span>
-                                <span>• Pattern transformations</span>
-                                <span>• Professional timing control</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="screenshots-section">
-                <h3>📱 See It In Action</h3>
-                <p>Real screenshots from the app showing each exercise in detail</p>
-
-                <!-- Screenshots will be added here -->
-                <div class="screenshots-grid" id="screenshots-placeholder">
-                    <div class="screenshot-card">
-                        <div class="screenshot-placeholder">
-                            <div class="placeholder-icon">🥁</div>
-                            <div class="placeholder-text">TUPS Screenshot<br><small>Coming Soon</small></div>
-                        </div>
-                        <div class="screenshot-caption">
-                            <h4>TUPS - Individual Note Control</h4>
-                            <p>Tap any note to mute/unmute. Visual feedback shows active subdivisions.</p>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-placeholder">
-                            <div class="placeholder-icon">🎵</div>
-                            <div class="placeholder-text">A&R+ Screenshot<br><small>Coming Soon</small></div>
-                        </div>
-                        <div class="screenshot-caption">
-                            <h4>A&R+ - Sticking Notation</h4>
-                            <p>Advanced melody creation with R/L hand assignments and multi-bar support.</p>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-placeholder">
-                            <div class="placeholder-icon">📊</div>
-                            <div class="placeholder-text">PATTERN Screenshot<br><small>Coming Soon</small></div>
-                        </div>
-                        <div class="screenshot-caption">
-                            <h4>PATTERN - Smart Assignment</h4>
-                            <p>Apply R/L/K/H patterns across all tuplet types with real-time visualization.</p>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card">
-                        <div class="screenshot-placeholder">
-                            <div class="placeholder-icon">🔬</div>
-                            <div class="placeholder-text">TUP LAB Screenshot<br><small>Coming Soon</small></div>
-                        </div>
-                        <div class="screenshot-caption">
-                            <h4>TUP LAB - Advanced Grouping</h4>
-                            <p>Professional pattern transformation laboratory with color-coded assignments.</p>
-                        </div>
+                    <div class="detail-section">
+                        <h4>🚀 Real-World Applications</h4>
+                        <p>Advanced composition tool, teaching aid, and research platform for discovering new rhythmic relationships and concepts.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Features -->
-    <section class="tech-features" id="features">
-        <div class="tech-content">
+    <!-- Metronome Features -->
+    <section class="section-alt" id="metronome">
+        <div class="section">
             <div class="section-title">
-                <h2>Professional-Grade Technology</h2>
-                <p>Built on industry-standard MIDI technology with uncompromising precision and performance</p>
+                <h2>Beyond Traditional Metronomes</h2>
+                <p>Professional features that traditional metronomes can't deliver</p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">⚡</div>
-                    <div class="feature-content">
-                        <h4>Ultra-Low Latency</h4>
-                        <p>Professional MIDI engine with <span class="feature-metric">&lt;5ms</span> precision timing. Perfect sync guaranteed for serious practice.</p>
-                    </div>
+            <div class="metronome-features">
+                <div class="metronome-card">
+                    <div class="metronome-icon">🤫</div>
+                    <h3>Random Silence Mode</h3>
+                    <p>The metronome randomly goes silent, forcing you to rely on your internal timing. Fully customizable silence patterns and durations.</p>
+                    <ul class="feature-list">
+                        <li>Adjustable silence probability</li>
+                        <li>Custom silence duration ranges</li>
+                        <li>Pattern-based silence sequences</li>
+                        <li>Progressive difficulty training</li>
+                    </ul>
                 </div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <div class="feature-content">
-                        <h4>Rock-Solid Stability</h4>
-                        <p>No drift over hours of use. Master timer coordination ensures consistent performance during extended sessions.</p>
-                    </div>
+                <div class="metronome-card">
+                    <div class="metronome-icon">⚡</div>
+                    <h3>Ultra-Low Latency</h3>
+                    <p>Professional MIDI engine delivers &lt;5ms precision timing. No drift, no lag - just perfect synchronization for serious practice.</p>
+                    <ul class="feature-list">
+                        <li>&lt;5ms precision timing</li>
+                        <li>No drift over extended sessions</li>
+                        <li>Master timer coordination</li>
+                        <li>Professional-grade stability</li>
+                    </ul>
                 </div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">🎼</div>
-                    <div class="feature-content">
-                        <h4>Professional Sound Bank</h4>
-                        <p>High-quality SF2 samples with comprehensive MIDI note mapping for realistic practice experience.</p>
-                    </div>
+                <div class="metronome-card">
+                    <div class="metronome-icon">🎛️</div>
+                    <h3>Advanced Customization</h3>
+                    <p>Comprehensive settings for every aspect of timing practice. Save and load custom presets for different practice sessions.</p>
+                    <ul class="feature-list">
+                        <li>Custom BPM ranges and curves</li>
+                        <li>Multiple time signature support</li>
+                        <li>Accent pattern customization</li>
+                        <li>Practice preset management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Applications -->
+    <section class="section" id="applications">
+        <div class="section-title">
+            <h2>Real-World Impact</h2>
+            <p>How TUPS training translates to professional musical situations</p>
+        </div>
+
+        <div class="applications-grid">
+            <div class="application-card">
+                <span class="application-icon">🎭</span>
+                <h3>Session Work</h3>
+                <p>Develop the rock-solid internal timing that session musicians depend on. Handle complex charts and odd time signatures with confidence.</p>
+            </div>
+
+            <div class="application-card">
+                <span class="application-icon">🎼</span>
+                <h3>Composition</h3>
+                <p>Use advanced pattern concepts for composition. Export MIDI patterns for DAW integration and musical development.</p>
+            </div>
+
+            <div class="application-card">
+                <span class="application-icon">🎤</span>
+                <h3>Live Performance</h3>
+                <p>Maintain timing in challenging live situations. Play with clicks, without clicks, and everything in between.</p>
+            </div>
+
+            <div class="application-card">
+                <span class="application-icon">🎓</span>
+                <h3>Music Education</h3>
+                <p>Teaching tool for rhythm educators. Demonstrate complex concepts with visual feedback and precise timing.</p>
+            </div>
+
+            <div class="application-card">
+                <span class="application-icon">🔬</span>
+                <h3>Musical Research</h3>
+                <p>Explore rhythmic relationships and discover new pattern concepts. Laboratory for musical experimentation.</p>
+            </div>
+
+            <div class="application-card">
+                <span class="application-icon">💪</span>
+                <h3>Coordination Training</h3>
+                <p>Develop limb independence and coordination through systematic pattern application and transformations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Science -->
+    <section class="section-alt" id="science">
+        <div class="section">
+            <div class="section-title">
+                <h2>The Science Behind TUPS</h2>
+                <p>Why this methodology works and how it builds professional timing</p>
+            </div>
+
+            <div class="metronome-features">
+                <div class="metronome-card">
+                    <div class="metronome-icon">🧠</div>
+                    <h3>Neural Pathway Development</h3>
+                    <p>Each tuplet subdivision creates unique neural pathways. Progressive training builds comprehensive rhythmic vocabulary at the neurological level.</p>
                 </div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">🔋</div>
-                    <div class="feature-content">
-                        <h4>Battery Optimized</h4>
-                        <p>Efficient performance with <span class="feature-metric">&lt;3%</span> battery drain per hour and <span class="feature-metric">&lt;50MB</span> memory footprint.</p>
-                    </div>
+                <div class="metronome-card">
+                    <div class="metronome-icon">⚡</div>
+                    <h3>Precision Timing Training</h3>
+                    <p>Professional timing requires precision measurement. Our &lt;5ms accuracy trains your ear to hear and reproduce true timing precision.</p>
                 </div>
 
-                <div class="feature-item">
-                    <div class="feature-icon">🎛️</div>
-                    <div class="feature-content">
-                        <h4>Master Control System</h4>
-                        <p>Global metronome with universal BPM and time signature synchronization across all exercises.</p>
-                    </div>
+                <div class="metronome-card">
+                    <div class="metronome-icon">🎯</div>
+                    <h3>Internal Clock Development</h3>
+                    <p>Random silence mode forces reliance on internal timing. This develops the unshakeable internal metronome that separates pros from amateurs.</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="feature-item">
-                    <div class="feature-icon">💾</div>
-                    <div class="feature-content">
-                        <h4>Pattern Export</h4>
-                        <p>Save and export your patterns as standard MIDI files with comprehensive preset management system.</p>
-                    </div>
+    <!-- Screenshots -->
+    <section class="section">
+        <div class="section-title">
+            <h2>See It In Action</h2>
+            <p>Real screenshots from the app showing professional features in detail</p>
+        </div>
+
+        <div class="screenshots-grid">
+            <div class="screenshot-card">
+                <div class="screenshot-placeholder">
+                    <div class="placeholder-icon">🥁</div>
+                    <div style="text-align: center; font-weight: 600;">TUPS Screenshot<br><small style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">Coming Soon</small></div>
+                </div>
+                <div class="screenshot-caption">
+                    <h4>Individual Note Control</h4>
+                    <p>Tap any subdivision to mute/unmute. Visual feedback shows active notes with color coding.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <div class="screenshot-placeholder">
+                    <div class="placeholder-icon">🎵</div>
+                    <div style="text-align: center; font-weight: 600;">A&R+ Screenshot<br><small style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">Coming Soon</small></div>
+                </div>
+                <div class="screenshot-caption">
+                    <h4>Advanced Sticking Notation</h4>
+                    <p>Professional R/L notation with multi-bar support and MIDI export functionality.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <div class="screenshot-placeholder">
+                    <div class="placeholder-icon">📊</div>
+                    <div style="text-align: center; font-weight: 600;">PATTERN Screenshot<br><small style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">Coming Soon</small></div>
+                </div>
+                <div class="screenshot-caption">
+                    <h4>Pattern Visualization</h4>
+                    <p>Real-time pattern application with Shadow/Anti transformations and smart assignment.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <div class="screenshot-placeholder">
+                    <div class="placeholder-icon">🔬</div>
+                    <div style="text-align: center; font-weight: 600;">TUP LAB Screenshot<br><small style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">Coming Soon</small></div>
+                </div>
+                <div class="screenshot-caption">
+                    <h4>Advanced Pattern Laboratory</h4>
+                    <p>Color-coded pattern relationships with professional grouping and analysis tools.</p>
                 </div>
             </div>
         </div>
@@ -1176,34 +1040,34 @@
     <section class="download" id="download">
         <div class="download-content">
             <h2>Ready to Master Your TIME?</h2>
-            <p>Join the next generation of musicians training with precision MIDI technology. Currently in final testing phase.</p>
+            <p>Join professional musicians training with precision MIDI technology. Currently in final testing phase.</p>
 
             <div class="store-badges">
-                <a href="https://apps.apple.com/app/tups" class="store-badge" title="Coming Soon">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%2368ff68' text-anchor='middle'%3ETestFlight Ready%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EApp Store%3C/text%3E%3C/svg%3E" alt="TestFlight Ready on App Store">
+                <a href="https://apps.apple.com/app/tups" class="store-badge">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%2368ff68' text-anchor='middle'%3ETestFlight Ready%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EApp Store%3C/text%3E%3C/svg%3E" alt="TestFlight Ready">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.tups.app" class="store-badge" title="In Testing">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%23ff9500' text-anchor='middle'%3EIn Testing%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="In Testing on Google Play">
+                <a href="https://play.google.com/store/apps/details?id=com.tups.app" class="store-badge">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='100' y='25' font-family='Arial' font-size='12' fill='%23ff9500' text-anchor='middle'%3EIn Testing%3C/text%3E%3Ctext x='100' y='40' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="In Testing">
                 </a>
             </div>
 
             <div class="status-info">
-                <h4>🚀 Current Release Status</h4>
+                <h4>🚀 Current Status</h4>
                 <div class="status-list">
                     <div class="status-item">
-                        <span class="status-icon">✅</span>
+                        <span style="color: #68ff68;">✅</span>
                         <span>Core functionality: 100% Complete</span>
                     </div>
                     <div class="status-item">
-                        <span class="status-icon">✅</span>
+                        <span style="color: #68ff68;">✅</span>
                         <span>iOS TestFlight Ready</span>
                     </div>
                     <div class="status-item">
-                        <span class="status-icon">🔄</span>
+                        <span style="color: #ff9500;">🔄</span>
                         <span>Android Closed Testing</span>
                     </div>
                     <div class="status-item">
-                        <span class="status-icon">🧪</span>
+                        <span style="color: #3B82F6;">🧪</span>
                         <span>RevenueCat Testing Phase</span>
                     </div>
                 </div>
@@ -1217,8 +1081,8 @@
             <div class="footer-section">
                 <h4>TUPS</h4>
                 <a href="#exercises">Exercises</a>
-                <a href="#features">Features</a>
-                <a href="#download">Download</a>
+                <a href="#metronome">Metronome</a>
+                <a href="#applications">Applications</a>
             </div>
 
             <div class="footer-section">
@@ -1229,22 +1093,22 @@
 
             <div class="footer-section">
                 <h4>Support</h4>
-                <a href="mailto:support@tupstheapp.com">Contact Support</a>
-                <a href="mailto:feedback@tupstheapp.com">Send Feedback</a>
+                <a href="mailto:support@tupstheapp.com">Contact</a>
+                <a href="mailto:feedback@tupstheapp.com">Feedback</a>
             </div>
 
             <div class="footer-section">
                 <h4>Technology</h4>
                 <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
-                    Built with Flutter & MIDI Pro<br>
-                    Professional-grade timing engine<br>
-                    Industry-standard architecture
+                    Professional MIDI Engine<br>
+                    &lt;5ms Precision Timing<br>
+                    Industry Standard Architecture
                 </p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 TUPS. All rights reserved. | Made with ❤️ for musicians worldwide</p>
+            <p>&copy; 2024 TUPS. All rights reserved.</p>
         </div>
     </footer>
 </body>

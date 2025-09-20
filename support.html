@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUPS Pro - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffd700, #4CAF50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 16px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item strong {
+            color: #ffd700;
+            min-width: 120px;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #66BB6A;
+            text-decoration: underline;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .faq-answer {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .checklist {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #ccc;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .footer-links {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links h3 {
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .links-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .links-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">T</div>
+            <h1>TUPS Pro Support</h1>
+            <p class="subtitle">We're here to help you master your rhythm</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>📧 Contact Support</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:support@tupstheapp.com">support@tupstheapp.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Response Time:</strong>
+                    <span>24-48 hours (weekdays)</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Languages:</strong>
+                    <span>English, Turkish</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Support Hours:</strong>
+                    <span>Monday - Friday, 9:00 AM - 6:00 PM (GMT+3)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">🔄 My subscription isn't activating after purchase</div>
+                <div class="faq-answer">
+                    Go to the app's Settings screen and tap "Restore Purchases". This will sync your subscription with our servers.
+                    If the issue persists, try closing the app completely and reopening it. Make sure you're logged in with the same
+                    Apple ID or Google account you used for the purchase.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔊 I can't hear any sounds from the app</div>
+                <div class="faq-answer">
+                    Check these settings: 1) Ensure your device is not on silent mode, 2) Increase your device volume,
+                    3) Check if other apps play sound normally, 4) In iOS, go to Settings > Sounds & Haptics and adjust the Ringer and Alerts volume,
+                    5) Force quit the app and restart it.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">💰 How do I cancel my subscription?</div>
+                <div class="faq-answer">
+                    <strong>iOS:</strong> Go to Settings > [Your Name] > Subscriptions > TUPS Pro > Cancel Subscription<br>
+                    <strong>Android:</strong> Open Google Play Store > Menu > Subscriptions > TUPS Pro > Cancel Subscription<br>
+                    Note: Uninstalling the app does not cancel your subscription.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔄 How do I request a refund?</div>
+                <div class="faq-answer">
+                    Refunds are processed directly through the App Store or Google Play Store:<br>
+                    <strong>iOS:</strong> Visit reportaproblem.apple.com and sign in with your Apple ID<br>
+                    <strong>Android:</strong> Visit play.google.com/store/account/orderhistory and request a refund<br>
+                    Please note that we cannot process refunds directly as all payments are handled by Apple/Google.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">📱 The app is crashing or running slowly</div>
+                <div class="faq-answer">
+                    Try these troubleshooting steps: 1) Update to the latest version of TUPS Pro from the App Store/Play Store,
+                    2) Restart your device, 3) Ensure you have at least 100MB of free storage space,
+                    4) Close other apps running in the background, 5) If the problem persists, contact us with your device model and iOS/Android version.
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h2>📋 Before Contacting Support</h2>
+            <p style="margin-bottom: 15px; color: #ccc;">Please have this information ready:</p>
+            <ul>
+                <li>Your device model (e.g., iPhone 14, Samsung Galaxy S23)</li>
+                <li>Operating system version (e.g., iOS 17.0, Android 14)</li>
+                <li>TUPS Pro app version (found in Settings > About)</li>
+                <li>Screenshots or screen recordings of the issue (if applicable)</li>
+                <li>Detailed description of what you were doing when the problem occurred</li>
+                <li>Steps you've already tried to resolve the issue</li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>Other Resources</h3>
+            <div class="links-row">
+                <div class="link-item">
+                    <span>🏠</span>
+                    <a href="https://tupstheapp.com">Home</a>
+                </div>
+                <div class="link-item">
+                    <span>🔒</span>
+                    <a href="https://tupstheapp.com/privacy-policy.html">Privacy Policy</a>
+                </div>
+                <div class="link-item">
+                    <span>📄</span>
+                    <a href="https://tupstheapp.com/terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
