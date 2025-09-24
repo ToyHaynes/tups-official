@@ -35,11 +35,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-accent-400 transition-colors">
-                  Pricing
-                </a>
-              </li>
-              <li>
                 <span className="text-gray-500 cursor-not-allowed">Features (Coming Soon)</span>
               </li>
             </ul>
@@ -107,7 +102,7 @@ export default function Footer() {
 
           <div className="text-gray-500 text-center md:text-right">
             <p>&copy; 2025 Tups Pro. All rights reserved.</p>
-            <p className="mt-1 text-xs">Made with love by Batuhan Toyhan.</p>
+            <p className="mt-1 text-xs">Made with love by <a href="https://batuhantoyhan.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent-400 transition-colors underline">Batuhan Toyhan</a>.</p>
           </div>
         </motion.div>
       </div>

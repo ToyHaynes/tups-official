@@ -149,7 +149,7 @@ export const FAQ_ITEMS = [
 export const SITE_CONFIG = {
   name: 'TUPS Pro',
   description: 'Master Rhythm in 15 Minutes Daily',
-  url: 'https://tupspro.com',
+  url: 'https://tupstheapp.com',
   launchDate: 'October 2025',
   social: {
     instagram: 'https://instagram.com/tupspro',

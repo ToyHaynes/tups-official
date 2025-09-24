@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TUPS Pro - Master Rhythm in 15 Minutes Daily",
     description: "Professional rhythm training app with 4 progressive exercises. Develop unshakeable timing and rhythm skills.",
-    url: "https://tupspro.com",
+    url: "https://tupstheapp.com",
     siteName: "TUPS Pro",
     locale: "en_US",
     type: "website",
