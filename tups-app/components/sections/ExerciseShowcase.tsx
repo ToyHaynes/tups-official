@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { EXERCISES } from '@/lib/constants';
@@ -9,6 +9,14 @@ import MaterialIcon from '../ui/MaterialIcon';
 
 export default function ExerciseShowcase() {
   const [activeTab, setActiveTab] = useState(0);
+
+  // Preload all exercise images
+  useEffect(() => {
+    EXERCISES.forEach((exercise) => {
+      const img = new window.Image();
+      img.src = exercise.videoUrl;
+    });
+  }, []);
 
   return (
     <section id="showcase" className="py-24 px-4 bg-white">
