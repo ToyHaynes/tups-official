@@ -56,7 +56,7 @@ export const EXERCISES = [
     name: 'THE METRONOME',
     tagline: 'That Teaches Silence',
     benefits: [
-      'Advanced <strong>silence training</strong> - pattern-based or <strong>random</strong> gaps build internal time',
+      'Advanced <strong>silence mode</strong> - pattern-based or <strong>random</strong> gaps build internal time',
       'Instant access - <strong>one-tap silence</strong> toggle, quick adjustments',
       'Save complete sessions - <strong>presets</strong> for BPM, T.S., sounds and silence'
     ],
