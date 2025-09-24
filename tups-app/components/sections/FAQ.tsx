@@ -12,7 +12,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 px-4 bg-white">
+    <section id="faq" className="py-24 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -21,7 +21,7 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-text mb-4">
+          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600">
@@ -44,7 +44,7 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(index)}
                 whileHover={{ backgroundColor: 'rgba(249, 250, 251, 1)' }}
               >
-                <h3 className="text-lg font-semibold text-text pr-4">
+                <h3 className="text-lg font-semibold text-gray-700 pr-4">
                   {item.question}
                 </h3>
                 <motion.svg

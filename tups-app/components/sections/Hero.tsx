@@ -54,16 +54,38 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <motion.h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+            Unlock Rhythmic<br/>
+            <span className="text-primary-600">Possibilities</span>
+          </motion.h1>
+
           <motion.p
             className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <strong>Four exercises</strong> that transform mechanical practice into <strong>rhythmic&nbsp;discovery</strong>.<br/>
-            Build unshakeable <strong>pulse</strong> while exploring infinite&nbsp;possibilities.
+            <strong>Four interactive exercises + professional metronome</strong> that transform mechanical practice into rhythmic discovery. Build unshakeable <strong>pulse</strong> while exploring infinite possibilities.
           </motion.p>
 
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <CTAButton size="lg" href="#showcase">
+              Explore Exercises
+            </CTAButton>
+            <CTAButton size="lg" variant="outline" href="#newsletter">
+              Download App
+            </CTAButton>
+          </motion.div>
 
           <motion.p
             className="text-sm text-gray-500"
@@ -71,7 +93,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Coming October 2025
+            Available Now on App Store
           </motion.p>
         </motion.div>
       </div>

@@ -19,9 +19,6 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed">
               Professional rhythm training for musicians. Master timing, develop unshakeable pulse.
             </p>
-            <p className="text-accent-500 font-semibold text-sm mt-2">
-              Launching {SITE_CONFIG.launchDate}
-            </p>
           </motion.div>
 
           {/* Product */}
@@ -82,30 +79,9 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h4 className="font-semibold text-white mb-4">Follow Us</h4>
-            <div className="flex space-x-4">
-              <motion.a
-                href={SITE_CONFIG.social.instagram}
-                className="text-gray-400 hover:text-accent-400 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="sr-only">Instagram</span>
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348-1.051 2.348-2.348 2.348zm7.718 0c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348-1.051 2.348-2.348 2.348z"/>
-                </svg>
-              </motion.a>
-
-              <motion.a
-                href={SITE_CONFIG.social.youtube}
-                className="text-gray-400 hover:text-accent-400 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="sr-only">YouTube</span>
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-              </motion.a>
+            <div className="flex flex-col space-y-2 text-sm">
+              <span className="text-gray-500 cursor-not-allowed">Instagram (Coming Soon)</span>
+              <span className="text-gray-500 cursor-not-allowed">YouTube (Coming Soon)</span>
             </div>
           </motion.div>
         </div>
@@ -131,8 +107,8 @@ export default function Footer() {
           </div>
 
           <div className="text-gray-500 text-center md:text-right">
-            <p>&copy; 2024 TUPS Pro. All rights reserved.</p>
-            <p className="mt-1 text-xs">Built for musicians, by musicians.</p>
+            <p>&copy; 2025 Tups Pro. All rights reserved.</p>
+            <p className="mt-1 text-xs">Made with love by Batuhan Toyhan.</p>
           </div>
         </motion.div>
       </div>

@@ -11,50 +11,8 @@ export default function ExerciseShowcase() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section id="showcase" className="min-h-screen pt-20 pb-20 px-4 bg-gradient-to-br from-background via-primary-50 to-accent-50">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary-500 rounded-full opacity-10"
-          animate={{
-            y: [0, -20, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute top-3/4 right-1/3 w-6 h-6 bg-accent-500 rounded-full opacity-10"
-          animate={{
-            y: [0, 20, 0],
-            scale: [1, 0.8, 1],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
-      </div>
-
-      <div className="max-w-6xl mx-auto relative z-10">
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            <strong>Four exercises</strong> that transform mechanical practice into <strong>rhythmic&nbsp;discovery</strong>.<br/>
-            Build unshakeable <strong>pulse</strong> while exploring infinite&nbsp;possibilities.
-          </p>
-
-        </motion.div>
+    <section id="showcase" className="py-24 px-4 bg-white">
+      <div className="max-w-6xl mx-auto">
 
         {/* Desktop Tabs */}
         <div className="hidden md:block">
@@ -108,7 +66,7 @@ export default function ExerciseShowcase() {
                     {activeTab === 3 && <MaterialIcon icon="science" size={32} className="text-primary-600" />}
                     {activeTab === 4 && <MaterialIcon icon="schedule" size={32} className="text-primary-600" />}
                   </span>
-                  <h3 className="text-3xl font-bold text-text">{EXERCISES[activeTab].name}</h3>
+                  <h3 className="text-3xl font-bold text-gray-700">{EXERCISES[activeTab].name}</h3>
                 </div>
                 <p className="text-xl text-accent-600 font-semibold mb-6">
                   {EXERCISES[activeTab].tagline}
@@ -180,7 +138,7 @@ export default function ExerciseShowcase() {
                     <MaterialIcon icon={exercise.icon} size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-text">{exercise.name}</h3>
+                    <h3 className="text-lg font-bold text-gray-700">{exercise.name}</h3>
                     <p className="text-sm text-accent-600 font-semibold">{exercise.tagline}</p>
                   </div>
                 </div>

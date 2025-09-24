@@ -17,15 +17,15 @@ const steps = [
   },
   {
     icon: '🎵',
-    title: 'Build Your Library',
-    description: 'Save patterns that work, presets that challenge you, grooves that inspire',
-    details: 'Your personal rhythm laboratory'
+    title: 'Take Ideas to Your Instrument',
+    description: 'Apply rhythmic discoveries to your kit, or practice on your knees anywhere',
+    details: 'Every pattern becomes part of your vocabulary'
   }
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 px-4 bg-gray-50">
+    <section id="how-it-works" className="py-24 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -34,7 +34,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-text mb-4">
+          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-gray-900 mb-4">
             How It Works
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -71,7 +71,7 @@ export default function HowItWorks() {
                   {step.icon}
                 </motion.div>
 
-                <h3 className="text-xl font-bold text-text mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold text-gray-700 mb-3">{step.title}</h3>
 
                 <p className="text-gray-600 mb-4 leading-relaxed flex-grow">
                   {step.description}
@@ -94,7 +94,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className="bg-white rounded-lg p-8 shadow-lg inline-block">
-            <h3 className="text-2xl font-bold text-text mb-4">Ready to Start?</h3>
+            <h3 className="text-2xl font-bold text-gray-700 mb-4">Ready to Start?</h3>
             <p className="text-gray-600 mb-6">Join thousands of musicians improving their rhythm skills</p>
             <motion.a
               href="#newsletter"

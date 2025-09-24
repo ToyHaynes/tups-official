@@ -6,7 +6,7 @@ import CTAButton from '../ui/CTAButton';
 
 export default function PricingTable() {
   return (
-    <section id="pricing" className="py-20 px-4 bg-gray-50">
+    <section id="pricing" className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -15,7 +15,7 @@ export default function PricingTable() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-text mb-4">
+          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold text-gray-900 mb-4">
             Choose Your Plan
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ export default function PricingTable() {
 
               <div className={`p-8 ${tier.popular ? 'pt-12' : ''}`}>
                 {/* Plan name */}
-                <h3 className="text-xl font-bold text-text mb-2">{tier.name}</h3>
+                <h3 className="text-xl font-bold text-gray-700 mb-2">{tier.name}</h3>
 
                 {/* Savings badge */}
                 {tier.savings && (
@@ -56,7 +56,7 @@ export default function PricingTable() {
 
                 {/* Price */}
                 <div className="mb-6">
-                  <span className="text-3xl font-bold text-text">{tier.price}</span>
+                  <span className="text-3xl font-bold text-gray-900">{tier.price}</span>
                   <span className="text-gray-600 ml-1">{tier.period}</span>
                 </div>
 

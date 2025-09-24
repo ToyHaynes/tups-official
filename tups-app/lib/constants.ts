@@ -30,9 +30,9 @@ export const EXERCISES = [
     name: 'PATTERN',
     tagline: 'Familiar Patterns, Infinite Possibilities',
     benefits: [
-      'Start anywhere, end anywhere - discover how <strong>displacement transforms feel</strong>',
+      '<strong>Start anywhere, end anywhere</strong> - discover how displacement transforms feel',
       'Apply to <strong>any tuplet</strong> - watch simple RLK become complex in 5s or 7s',
-      'Master the math - know exactly where to start to <strong>land on beat 1</strong>'
+      'Master the math - know exactly where to start to <strong>land on Beat 1</strong>'
     ],
     videoUrl: '/images/pattern.demo.png',
     icon: 'grid_on',

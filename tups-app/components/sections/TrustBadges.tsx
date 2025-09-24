@@ -43,7 +43,7 @@ const badges = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -52,7 +52,7 @@ export default function TrustBadges() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-text mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Built by Musicians for Musicians
           </h2>
           <p className="text-gray-600">
@@ -82,7 +82,7 @@ export default function TrustBadges() {
                 {badge.icon}
               </motion.div>
 
-              <h3 className="font-semibold text-text mb-2 text-sm">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm">
                 {badge.title}
               </h3>
 

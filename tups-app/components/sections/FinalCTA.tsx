@@ -1,26 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import CTAButton from '../ui/CTAButton';
 
 export default function FinalCTA() {
-  const [email, setEmail] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // TODO: Implement email capture
-    console.log('Email submitted:', email);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setEmail('');
-    }, 3000);
-  };
 
   return (
-    <section id="newsletter" className="py-20 px-4 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700">
+    <section id="newsletter" className="py-24 px-4 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,52 +13,14 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold mb-6 text-gray-800">
-            Ready to Transform Your Rhythm?
+          <h2 className="text-section-mobile md:text-section-desktop font-heading font-bold mb-6 text-gray-900">
+            Ready to Discover Your Rhythmic Potential?
           </h2>
-          <p className="text-xl mb-8 text-gray-800 max-w-2xl mx-auto leading-relaxed">
-            Download TUPS Pro today and experience professional rhythm training.
-            Start your free trial and transform your musical timing.
+          <p className="text-xl mb-12 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Every pattern you know has possibilities you don't. Start your <strong>7-day free trial</strong> and see rhythm from angles you never imagined.
           </p>
         </motion.div>
 
-        <motion.div
-          className="max-w-md mx-auto mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          {!isSubmitted ? (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-primary-600"
-                required
-              />
-              <CTAButton
-                variant="secondary"
-                size="md"
-                className="whitespace-nowrap"
-                onClick={() => {}}
-              >
-                Get Started
-              </CTAButton>
-            </form>
-          ) : (
-            <motion.div
-              className="bg-success-500 text-white px-6 py-3 rounded-lg font-semibold"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 300 }}
-            >
-              ✅ Thanks! Check your email for download instructions.
-            </motion.div>
-          )}
-        </motion.div>
 
         {/* App Store Badges */}
         <motion.div

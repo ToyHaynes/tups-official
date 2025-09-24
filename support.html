@@ -3,318 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUPS Pro - Support</title>
+    <title>Support - Tups Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #374151;
+            background: linear-gradient(135deg, #fafafa 0%, #eff6ff 50%, #fffbeb 100%);
             min-height: 100vh;
-            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 48rem;
             margin: 0 auto;
-            padding: 20px;
+            padding: 6rem 1.5rem 3rem;
         }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: color 0.2s;
+        }
+
+        .back-button:hover { color: #1d4ed8; }
 
         .header {
             text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: bold;
-            color: #1a1a1a;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-size: 36px;
+            color: #111827;
+            font-size: 2.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #ffd700, #4CAF50);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            color: #888;
-            font-size: 16px;
-        }
-
-        .contact-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            backdrop-filter: blur(10px);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
         h2 {
-            color: #4CAF50;
-            font-size: 24px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .contact-item strong {
-            color: #ffd700;
-            min-width: 120px;
-        }
-
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            color: #66BB6A;
-            text-decoration: underline;
-        }
-
-        .faq-section {
-            margin-top: 40px;
-        }
-
-        .faq-item {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
-        }
-
-        .faq-question {
-            color: #ffd700;
+            color: #374151;
+            font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 10px;
-            font-size: 16px;
+            margin: 2rem 0 1rem;
+            border-left: 4px solid #2563eb;
+            padding-left: 1rem;
         }
 
-        .faq-answer {
-            color: #ccc;
-            line-height: 1.6;
+        h3 {
+            color: #4b5563;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem;
         }
 
-        .checklist {
-            background: rgba(76, 175, 80, 0.1);
-            border: 1px solid rgba(76, 175, 80, 0.3);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 30px 0;
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        .checklist ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .checklist li {
-            padding: 8px 0;
-            padding-left: 25px;
-            position: relative;
-            color: #ccc;
-        }
-
-        .checklist li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #4CAF50;
-            font-weight: bold;
-        }
-
-        .footer-links {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        .support-card {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin: 1.5rem 0;
             text-align: center;
         }
 
-        .footer-links h3 {
-            color: #888;
-            font-size: 18px;
-            margin-bottom: 20px;
+        .support-card h3 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 1rem;
         }
 
-        .links-row {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
 
-        .link-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .option-card {
+            background: rgba(37, 99, 235, 0.05);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s;
         }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 28px;
-            }
+        .option-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
 
-            .contact-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        .emoji {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
 
-            .links-row {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
+        p { margin: 1rem 0; }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li { margin: 0.5rem 0; }
+
+        strong { color: #111827; }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .email-link {
+            background: #2563eb;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .email-link:hover {
+            background: #1d4ed8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 2rem 1rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.25rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="/tups-app" class="back-button">
+            ← Back to Tups Pro
+        </a>
+
         <div class="header">
-            <div class="logo">T</div>
-            <h1>TUPS Pro Support</h1>
-            <p class="subtitle">We're here to help you master your rhythm</p>
+            <h1>Support Center</h1>
+            <p>Get help with Tups Pro rhythm training</p>
         </div>
 
-        <div class="contact-card">
-            <h2>📧 Contact Support</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong>
-                    <a href="mailto:support@tupstheapp.com">support@tupstheapp.com</a>
-                </div>
-                <div class="contact-item">
-                    <strong>Response Time:</strong>
-                    <span>24-48 hours (weekdays)</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Languages:</strong>
-                    <span>English, Turkish</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Support Hours:</strong>
-                    <span>Monday - Friday, 9:00 AM - 6:00 PM (GMT+3)</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="faq-section">
-            <h2>❓ Frequently Asked Questions</h2>
-
-            <div class="faq-item">
-                <div class="faq-question">🔄 My subscription isn't activating after purchase</div>
-                <div class="faq-answer">
-                    Go to the app's Settings screen and tap "Restore Purchases". This will sync your subscription with our servers.
-                    If the issue persists, try closing the app completely and reopening it. Make sure you're logged in with the same
-                    Apple ID or Google account you used for the purchase.
-                </div>
+        <div class="content">
+            <div class="support-card">
+                <h3>📧 Need Help?</h3>
+                <p>Our support team is here to help you master rhythm with Tups Pro</p>
+                <a href="mailto:support@tupspro.com" class="email-link">Contact Support</a>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question">🔊 I can't hear any sounds from the app</div>
-                <div class="faq-answer">
-                    Check these settings: 1) Ensure your device is not on silent mode, 2) Increase your device volume,
-                    3) Check if other apps play sound normally, 4) In iOS, go to Settings > Sounds & Haptics and adjust the Ringer and Alerts volume,
-                    5) Force quit the app and restart it.
+            <h2>How can we help you?</h2>
+
+            <div class="support-options">
+                <div class="option-card">
+                    <span class="emoji">🎵</span>
+                    <h3>App Help</h3>
+                    <p>Questions about exercises, features, or how to use the app</p>
+                </div>
+
+                <div class="option-card">
+                    <span class="emoji">💳</span>
+                    <h3>Billing & Subscriptions</h3>
+                    <p>Issues with payments, subscriptions, or refund requests</p>
+                </div>
+
+                <div class="option-card">
+                    <span class="emoji">🐛</span>
+                    <h3>Bug Reports</h3>
+                    <p>Found a problem? Report bugs or technical issues</p>
+                </div>
+
+                <div class="option-card">
+                    <span class="emoji">💡</span>
+                    <h3>Feature Requests</h3>
+                    <p>Suggest new exercises, features, or improvements</p>
                 </div>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question">💰 How do I cancel my subscription?</div>
-                <div class="faq-answer">
-                    <strong>iOS:</strong> Go to Settings > [Your Name] > Subscriptions > TUPS Pro > Cancel Subscription<br>
-                    <strong>Android:</strong> Open Google Play Store > Menu > Subscriptions > TUPS Pro > Cancel Subscription<br>
-                    Note: Uninstalling the app does not cancel your subscription.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">🔄 How do I request a refund?</div>
-                <div class="faq-answer">
-                    Refunds are processed directly through the App Store or Google Play Store:<br>
-                    <strong>iOS:</strong> Visit reportaproblem.apple.com and sign in with your Apple ID<br>
-                    <strong>Android:</strong> Visit play.google.com/store/account/orderhistory and request a refund<br>
-                    Please note that we cannot process refunds directly as all payments are handled by Apple/Google.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">📱 The app is crashing or running slowly</div>
-                <div class="faq-answer">
-                    Try these troubleshooting steps: 1) Update to the latest version of TUPS Pro from the App Store/Play Store,
-                    2) Restart your device, 3) Ensure you have at least 100MB of free storage space,
-                    4) Close other apps running in the background, 5) If the problem persists, contact us with your device model and iOS/Android version.
-                </div>
-            </div>
-        </div>
-
-        <div class="checklist">
-            <h2>📋 Before Contacting Support</h2>
-            <p style="margin-bottom: 15px; color: #ccc;">Please have this information ready:</p>
+            <h2>Quick Help</h2>
+            <h3>Getting Started</h3>
             <ul>
-                <li>Your device model (e.g., iPhone 14, Samsung Galaxy S23)</li>
-                <li>Operating system version (e.g., iOS 17.0, Android 14)</li>
-                <li>TUPS Pro app version (found in Settings > About)</li>
-                <li>Screenshots or screen recordings of the issue (if applicable)</li>
-                <li>Detailed description of what you were doing when the problem occurred</li>
-                <li>Steps you've already tried to resolve the issue</li>
+                <li><strong>Download the app</strong> from the App Store</li>
+                <li><strong>Start with TUPS</strong> - it's the foundational exercise</li>
+                <li><strong>Use headphones</strong> for the best experience</li>
+                <li><strong>Practice 15 minutes daily</strong> for best results</li>
             </ul>
-        </div>
 
-        <div class="footer-links">
-            <h3>Other Resources</h3>
-            <div class="links-row">
-                <div class="link-item">
-                    <span>🏠</span>
-                    <a href="https://tupstheapp.com">Home</a>
-                </div>
-                <div class="link-item">
-                    <span>🔒</span>
-                    <a href="https://tupstheapp.com/privacy-policy.html">Privacy Policy</a>
-                </div>
-                <div class="link-item">
-                    <span>📄</span>
-                    <a href="https://tupstheapp.com/terms-of-service.html">Terms of Service</a>
-                </div>
+            <h3>Common Issues</h3>
+            <ul>
+                <li><strong>Audio not working?</strong> Check your device volume and ensure the app has audio permissions</li>
+                <li><strong>App crashes?</strong> Try restarting the app or updating to the latest version</li>
+                <li><strong>Subscription problems?</strong> Check your App Store account settings</li>
+            </ul>
+
+            <h3>Contact Information</h3>
+            <p>For all support inquiries, please email us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@tupspro.com">support@tupspro.com</a></p>
+            <p><strong>Response Time:</strong> We typically respond within 24 hours</p>
+
+            <div class="support-card">
+                <h3>🎯 Pro Tip</h3>
+                <p>When contacting support, include your device model, iOS version, and app version for faster assistance!</p>
             </div>
+
+            <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e5e7eb;">
+            <p><small>Made with love by ToyHaynes • <a href="/privacy-policy.html">Privacy Policy</a> • <a href="/terms-of-service.html">Terms of Service</a></small></p>
         </div>
     </div>
 </body>
