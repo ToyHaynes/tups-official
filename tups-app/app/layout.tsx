@@ -38,6 +38,11 @@ export const metadata: Metadata = {
     title: "TUPS Pro - Master Rhythm in 15 Minutes Daily",
     description: "Professional rhythm training app with 4 progressive exercises. Develop unshakeable timing and rhythm skills.",
   },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
