@@ -95,7 +95,7 @@ export default function HowItWorks() {
         >
           <div className="bg-white rounded-lg p-8 shadow-lg inline-block">
             <h3 className="text-2xl font-bold text-gray-700 mb-4">Ready to Start?</h3>
-            <p className="text-gray-600 mb-6">Join thousands of musicians improving their rhythm skills</p>
+            <p className="text-gray-600 mb-6">Transform your rhythm practice today</p>
             <motion.a
               href="#newsletter"
               className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl border border-gray-900"
