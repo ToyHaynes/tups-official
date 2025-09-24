@@ -17,7 +17,7 @@ export default function FinalCTA() {
             Ready to Discover Your Rhythmic Potential?
           </h2>
           <p className="text-xl mb-12 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Every pattern you know has possibilities you don't. Start your <strong>7-day free trial</strong> and see rhythm from angles you never imagined.
+            Every pattern you know has possibilities you don&apos;t. Start your <strong>7-day free trial</strong> and see rhythm from angles you never imagined.
           </p>
         </motion.div>
 

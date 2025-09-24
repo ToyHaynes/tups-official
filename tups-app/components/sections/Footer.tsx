@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { SITE_CONFIG } from '@/lib/constants';
 
 export default function Footer() {
   return (

@@ -1,16 +1,14 @@
 
+'use client';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { EXERCISES } from '@/lib/constants';
 import { notFound } from 'next/navigation';
+import { useParams } from 'next/navigation';
 
-interface ExercisePageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ExercisePage({ params }: ExercisePageProps) {
+export default function ExercisePage() {
+  const params = useParams();
   const exercise = EXERCISES.find(ex => ex.id === params.id);
 
   if (!exercise) {
@@ -81,25 +79,3 @@ export default function ExercisePage({ params }: ExercisePageProps) {
   );
 }
 
-// Generate static params for all exercises
-export function generateStaticParams() {
-  return EXERCISES.map((exercise) => ({
-    id: exercise.id,
-  }));
-}
-
-// Generate metadata for each exercise page
-export function generateMetadata({ params }: ExercisePageProps) {
-  const exercise = EXERCISES.find(ex => ex.id === params.id);
-
-  if (!exercise) {
-    return {
-      title: 'Exercise Not Found',
-    };
-  }
-
-  return {
-    title: `${exercise.name} - TUPS Pro`,
-    description: `${exercise.tagline} - ${exercise.description}`,
-  };
-}
