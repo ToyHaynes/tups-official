@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface VideoPlayerProps {
   src: string;
@@ -66,6 +67,25 @@ export default function VideoPlayer({
       default: return 'aspect-video';
     }
   };
+
+  // Check if it's an image (PNG) instead of video - use mobile app aspect ratio
+  if (src.endsWith('.png') || src.endsWith('.jpg') || src.endsWith('.jpeg')) {
+    return (
+      <motion.div
+        className={`flex justify-center lg:justify-end ${className}`}
+        whileHover={{ scale: 1.02 }}
+      >
+        <Image
+          src={src}
+          alt={placeholder || 'Exercise Demo'}
+          width={280}
+          height={395}
+          className="w-auto h-auto max-w-[240px] lg:max-w-[280px] rounded-xl shadow-2xl"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </motion.div>
+    );
+  }
 
   // For now, show placeholder since we don't have real videos
   if (!src.startsWith('http') && !isLoaded) {

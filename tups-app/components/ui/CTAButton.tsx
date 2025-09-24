@@ -25,7 +25,7 @@ export default function CTAButton({
   const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
   const variantClasses = {
-    primary: 'bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 hover:border-gray-400 focus:ring-primary-500 shadow-lg hover:shadow-xl',
+    primary: 'bg-gray-900 text-white border-2 border-gray-900 hover:bg-gray-800 hover:border-gray-800 focus:ring-primary-500 shadow-lg hover:shadow-xl',
     secondary: 'bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500 shadow-lg hover:shadow-xl',
     outline: 'border-2 border-gray-300 text-gray-700 bg-white hover:bg-gray-50 focus:ring-primary-500',
   };

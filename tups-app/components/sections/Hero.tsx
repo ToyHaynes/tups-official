@@ -54,38 +54,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-hero-mobile md:text-hero-desktop font-heading font-bold text-text mb-6 leading-tight">
-            Every Pattern Has Hidden Potential
-          </h1>
-
           <motion.p
             className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Four progressive exercises that transform mechanical practice into rhythmic discovery.
-            Build unshakeable pulse while exploring infinite possibilities.
+            <strong>Four exercises</strong> that transform mechanical practice into <strong>rhythmic&nbsp;discovery</strong>.<br/>
+            Build unshakeable <strong>pulse</strong> while exploring infinite&nbsp;possibilities.
           </motion.p>
 
-          <motion.div
-            className="flex justify-center items-center mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <CTAButton
-              href="#pricing"
-              variant="primary"
-              size="lg"
-              className="px-8 py-4"
-            >
-              Start Free Trial
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </CTAButton>
-          </motion.div>
 
           <motion.p
             className="text-sm text-gray-500"
@@ -93,7 +71,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Coming January 2025 • No credit card required
+            Coming October 2025
           </motion.p>
         </motion.div>
       </div>

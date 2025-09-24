@@ -5,27 +5,39 @@ import { motion } from 'framer-motion';
 const badges = [
   {
     icon: '⚡',
-    title: 'Professional MIDI Engine',
-    description: '<5ms latency for perfect timing',
+    title: 'Ultra-Low Latency',
+    description: '<5ms response time',
     color: 'primary'
   },
   {
-    icon: '🚫',
-    title: 'No Credit Card Required',
-    description: 'Start your free trial instantly',
+    icon: '🎛️',
+    title: 'Professional Samples',
+    description: 'High-quality drum sounds',
     color: 'success'
   },
   {
-    icon: '🔄',
-    title: 'Cancel Anytime',
-    description: 'Full control of your subscription',
+    icon: '📱',
+    title: 'Universal Sync',
+    description: 'iOS & Android seamless',
     color: 'accent'
   },
   {
-    icon: '📱',
-    title: 'All Devices Supported',
-    description: 'iOS, Android, sync across devices',
+    icon: '🔒',
+    title: 'Privacy First',
+    description: 'No tracking, no ads',
     color: 'primary'
+  },
+  {
+    icon: '💬',
+    title: 'Community Driven',
+    description: 'Updates from user feedback',
+    color: 'success'
+  },
+  {
+    icon: '✨',
+    title: 'Free Trial',
+    description: 'Full features, no limits',
+    color: 'accent'
   }
 ];
 
@@ -41,14 +53,14 @@ export default function TrustBadges() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-text mb-4">
-            Built for Musicians, by Musicians
+            Built by Musicians for Musicians
           </h2>
           <p className="text-gray-600">
-            Professional-grade tools you can trust
+            Studio-grade precision meets intuitive design
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {badges.map((badge, index) => (
             <motion.div
               key={index}

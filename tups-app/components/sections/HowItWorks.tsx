@@ -4,22 +4,22 @@ import { motion } from 'framer-motion';
 
 const steps = [
   {
-    icon: '📱',
-    title: 'Download',
-    description: 'Get TUPS Pro from the App Store or Google Play. Start your free trial instantly.',
-    details: 'Available on all devices'
-  },
-  {
     icon: '🎯',
-    title: 'Practice',
-    description: '15 minutes daily with our progressive exercises. Built-in metronome keeps you precise.',
-    details: 'Professional MIDI timing'
+    title: 'Start Where You Struggle',
+    description: 'Pick any exercise based on today\'s challenge - timing, accents, or polyrhythms',
+    details: 'Targeted practice from day one'
   },
   {
-    icon: '🏆',
-    title: 'Master',
-    description: 'Develop unshakeable timing and confidence. Track your progress as skills improve.',
-    details: 'Measurable results'
+    icon: '🎨',
+    title: 'Make It Yours',
+    description: 'Mute notes, write melodies, layer patterns - sculpt exactly what you need',
+    details: 'Interactive tools, infinite possibilities'
+  },
+  {
+    icon: '🎵',
+    title: 'Build Your Library',
+    description: 'Save patterns that work, presets that challenge you, grooves that inspire',
+    details: 'Your personal rhythm laboratory'
   }
 ];
 
@@ -38,7 +38,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Three simple steps to transform your rhythm skills
+            Transform your rhythm in 15 minutes daily
           </p>
         </motion.div>
 
@@ -57,7 +57,7 @@ export default function HowItWorks() {
                 <div className="hidden md:block absolute top-16 left-full w-8 h-0.5 bg-gradient-to-r from-primary-200 to-transparent z-0" />
               )}
 
-              <div className="relative bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+              <div className="relative bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-full flex flex-col">
                 {/* Step number */}
                 <div className="absolute -top-4 left-4 bg-primary-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                   {index + 1}
@@ -73,11 +73,11 @@ export default function HowItWorks() {
 
                 <h3 className="text-xl font-bold text-text mb-3">{step.title}</h3>
 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed flex-grow">
                   {step.description}
                 </p>
 
-                <div className="inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold mt-auto">
                   {step.details}
                 </div>
               </div>
@@ -97,8 +97,8 @@ export default function HowItWorks() {
             <h3 className="text-2xl font-bold text-text mb-4">Ready to Start?</h3>
             <p className="text-gray-600 mb-6">Join thousands of musicians improving their rhythm skills</p>
             <motion.a
-              href="#pricing"
-              className="inline-flex items-center bg-primary-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors shadow-lg hover:shadow-xl"
+              href="#newsletter"
+              className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl border border-gray-900"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

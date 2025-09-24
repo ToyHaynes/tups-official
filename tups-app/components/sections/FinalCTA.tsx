@@ -75,7 +75,7 @@ export default function FinalCTA() {
           )}
         </motion.div>
 
-        {/* App Store Badges (placeholder) */}
+        {/* App Store Badges */}
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,12 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="bg-white bg-opacity-90 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-opacity-100 transition-all cursor-pointer shadow-lg">
+          <a
+            href="https://apps.apple.com/tr/app/tups-pro/id6752381668"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white bg-opacity-90 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-opacity-100 transition-all cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
             <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center">
               <span className="text-white font-bold text-sm">📱</span>
             </div>
@@ -91,15 +96,15 @@ export default function FinalCTA() {
               <p className="text-xs text-gray-600">Download on the</p>
               <p className="font-semibold text-gray-800">App Store</p>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-white bg-opacity-90 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-opacity-100 transition-all cursor-pointer shadow-lg">
-            <div className="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center">
+          <div className="bg-white bg-opacity-60 backdrop-blur-sm border border-gray-300 rounded-lg px-6 py-3 flex items-center space-x-3 shadow-lg opacity-75">
+            <div className="w-8 h-8 bg-gray-400 rounded-md flex items-center justify-center">
               <span className="text-white font-bold text-sm">🤖</span>
             </div>
             <div className="text-left">
-              <p className="text-xs text-gray-600">Get it on</p>
-              <p className="font-semibold text-gray-800">Google Play</p>
+              <p className="text-xs text-gray-500">Coming Soon</p>
+              <p className="font-semibold text-gray-600">Google Play</p>
             </div>
           </div>
         </motion.div>
