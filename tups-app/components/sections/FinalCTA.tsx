@@ -45,15 +45,20 @@ export default function FinalCTA() {
             </div>
           </a>
 
-          <div className="bg-white bg-opacity-60 backdrop-blur-sm border border-gray-300 rounded-lg px-6 py-3 flex items-center space-x-3 shadow-lg opacity-75">
-            <div className="w-8 h-8 bg-gray-400 rounded-md flex items-center justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.tups.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white bg-opacity-90 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-opacity-100 transition-all cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            <div className="w-8 h-8 bg-green-500 rounded-md flex items-center justify-center">
               <span className="text-white font-bold text-sm">🤖</span>
             </div>
             <div className="text-left">
-              <p className="text-xs text-gray-500">Coming Soon</p>
-              <p className="font-semibold text-gray-600">Google Play</p>
+              <p className="text-xs text-gray-600">Download on</p>
+              <p className="font-semibold text-gray-800">Google Play</p>
             </div>
-          </div>
+          </a>
         </motion.div>
 
         {/* Trust elements */}

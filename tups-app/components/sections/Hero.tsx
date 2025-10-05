@@ -93,7 +93,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Available Now on App Store
+            Available Now on App Store & Google Play
           </motion.p>
         </motion.div>
       </div>
