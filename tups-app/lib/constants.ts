@@ -1,3 +1,4 @@
+
 export const EXERCISES = [
   {
     id: 'tups',
