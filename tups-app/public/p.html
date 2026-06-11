@@ -102,16 +102,33 @@
 
       document.getElementById('openBtn').href = 'tups://import?d=' + d;
 
-      try {
-        var b64 = d.replace(/-/g, '+').replace(/_/g, '/');
-        var json = JSON.parse(decodeURIComponent(escape(atob(b64))));
-        var presets = json.presets || [];
-        if (presets.length === 1 && presets[0].name) {
-          document.getElementById('presetName').textContent = '“' + presets[0].name + '”';
-        } else if (presets.length > 1) {
-          document.getElementById('presetName').textContent = presets.length + ' presets';
-        }
-      } catch (e) { /* preview is optional — button still works */ }
+      // Payload may be gzipped (new app versions) or plain JSON (old ones);
+      // gzip magic bytes 1f 8b tell them apart. Preview is optional — the
+      // button works either way.
+      (async function () {
+        try {
+          var b64 = d.replace(/-/g, '+').replace(/_/g, '/');
+          var bin = atob(b64);
+          var bytes = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+
+          var text;
+          if (bytes[0] === 0x1f && bytes[1] === 0x8b) {
+            var stream = new Blob([bytes]).stream()
+              .pipeThrough(new DecompressionStream('gzip'));
+            text = await new Response(stream).text();
+          } else {
+            text = new TextDecoder().decode(bytes);
+          }
+
+          var presets = JSON.parse(text).presets || [];
+          if (presets.length === 1 && presets[0].name) {
+            document.getElementById('presetName').textContent = '“' + presets[0].name + '”';
+          } else if (presets.length > 1) {
+            document.getElementById('presetName').textContent = presets.length + ' presets';
+          }
+        } catch (e) { /* ignore */ }
+      })();
     })();
   </script>
 </body>
