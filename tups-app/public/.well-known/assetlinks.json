@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tups.app",
+      "sha256_cert_fingerprints": [
+        "C3:E0:12:65:16:34:48:BF:5D:D6:53:9C:0C:09:82:16:79:50:AD:6C:D3:AA:6E:A0:0F:AF:59:78:F1:79:FE:BC",
+        "BA:94:30:59:64:30:3F:2E:D2:8C:10:B8:87:3E:FC:E6:F4:EE:D4:17:22:AD:8E:AE:61:B0:49:7F:33:D5:23:9B",
+        "B9:86:17:F9:E3:76:9A:76:CC:C8:28:8D:08:B5:E3:72:D2:68:55:81:69:93:B6:81:D5:D3:1F:CB:2E:F3:DC:00"
+      ]
+    }
+  }
+]

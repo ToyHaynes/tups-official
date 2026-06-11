@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["SSG5JBP4F8.com.tups.app"],
+        "components": [
+          { "/": "/p" },
+          { "/": "/p/*" }
+        ]
+      }
+    ]
+  }
+}
