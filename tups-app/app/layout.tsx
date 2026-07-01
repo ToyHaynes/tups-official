@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Tups Pro - Master Rhythm in 15 Minutes Daily",
+  title: "Tups Pro - Explore the Space Between the Beats",
   description: "Professional rhythm training app with 4 exercises. Develop unshakeable timing and rhythm skills. Coming October 2025.",
   keywords: ["rhythm training", "music practice", "metronome", "timing", "musician", "tuplets", "polyrhythm"],
   authors: [{ name: "TUPS Pro Team" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "TUPS Pro - Master Rhythm in 15 Minutes Daily",
+    title: "TUPS Pro - Explore the Space Between the Beats",
     description: "Professional rhythm training app with 4 progressive exercises. Develop unshakeable timing and rhythm skills.",
     url: "https://tupstheapp.com",
     siteName: "TUPS Pro",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TUPS Pro - Master Rhythm in 15 Minutes Daily",
+    title: "TUPS Pro - Explore the Space Between the Beats",
     description: "Professional rhythm training app with 4 progressive exercises. Develop unshakeable timing and rhythm skills.",
   },
   icons: {
