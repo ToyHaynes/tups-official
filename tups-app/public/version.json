@@ -1,0 +1,63 @@
+{
+  "_comment": "Uygulama bunu gunde bir kez okur. SIRA ONEMLI: bir surumu buraya ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. Erken yazarsan kullanici magazaya gidip eski surumu bulur.",
+  "latest": {
+    "ios": "2.5.2",
+    "android": "2.5.1"
+  },
+  "i18n": {
+    "en": {
+      "title": "Update available",
+      "body": "Tighter metronome timing and a handful of fixes.",
+      "update": "Update",
+      "later": "Later"
+    },
+    "tr": {
+      "title": "Yeni sürüm var",
+      "body": "Metronom zamanlaması iyileştirildi ve birkaç düzeltme yapıldı.",
+      "update": "Güncelle",
+      "later": "Daha sonra"
+    },
+    "de": {
+      "title": "Update verfügbar",
+      "body": "Präziseres Metronom-Timing und einige Korrekturen.",
+      "update": "Aktualisieren",
+      "later": "Später"
+    },
+    "es": {
+      "title": "Actualización disponible",
+      "body": "Mejor precisión del metrónomo y varias correcciones.",
+      "update": "Actualizar",
+      "later": "Más tarde"
+    },
+    "fr": {
+      "title": "Mise à jour disponible",
+      "body": "Timing du métronome amélioré et quelques corrections.",
+      "update": "Mettre à jour",
+      "later": "Plus tard"
+    },
+    "it": {
+      "title": "Aggiornamento disponibile",
+      "body": "Timing del metronomo migliorato e alcune correzioni.",
+      "update": "Aggiorna",
+      "later": "Più tardi"
+    },
+    "pt": {
+      "title": "Atualização disponível",
+      "body": "Melhor precisão do metrônomo e várias correções.",
+      "update": "Atualizar",
+      "later": "Mais tarde"
+    },
+    "ja": {
+      "title": "アップデートがあります",
+      "body": "メトロノームの精度が向上し、いくつかの修正が入りました。",
+      "update": "更新",
+      "later": "後で"
+    },
+    "ru": {
+      "title": "Доступно обновление",
+      "body": "Точность метронома улучшена, исправлены ошибки.",
+      "update": "Обновить",
+      "later": "Позже"
+    }
+  }
+}
