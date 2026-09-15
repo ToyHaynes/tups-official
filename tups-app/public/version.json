@@ -1,8 +1,8 @@
 {
-  "_comment": "Uygulama bunu gunde bir kez okur. SIRA ONEMLI: bir surumu buraya ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. Erken yazarsan kullanici magazaya gidip eski surumu bulur.",
+  "_comment": "TEST — android gecici olarak 2.5.3. Test biter bitmez 2.5.1e geri alinacak.",
   "latest": {
     "ios": "2.5.2",
-    "android": "2.5.1"
+    "android": "2.5.3"
   },
   "i18n": {
     "en": {
