@@ -1,7 +1,7 @@
 {
-  "_comment": "TEST — android gecici olarak 2.5.3. Test biter bitmez 2.5.1e geri alinacak.",
+  "_comment": "SIRA ONEMLI: bir surumu buraya ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. Guncelleyecegin yer: latest (surum) + i18n[dil].body (metin). Dosyada olmayan dil icin en kullanilir.",
   "latest": {
-    "ios": "2.5.2",
+    "ios": "2.5.3",
     "android": "2.5.3"
   },
   "i18n": {
@@ -25,27 +25,93 @@
     },
     "es": {
       "title": "Actualización disponible",
-      "body": "Mejor precisión del metrónomo y varias correcciones.",
+      "body": "Mayor precisión del metrónomo y varias correcciones.",
       "update": "Actualizar",
       "later": "Más tarde"
     },
     "fr": {
       "title": "Mise à jour disponible",
-      "body": "Timing du métronome amélioré et quelques corrections.",
+      "body": "Timing du métronome affiné et quelques corrections.",
       "update": "Mettre à jour",
       "later": "Plus tard"
     },
     "it": {
       "title": "Aggiornamento disponibile",
-      "body": "Timing del metronomo migliorato e alcune correzioni.",
+      "body": "Timing del metronomo più preciso e alcune correzioni.",
       "update": "Aggiorna",
       "later": "Più tardi"
     },
     "pt": {
       "title": "Atualização disponível",
-      "body": "Melhor precisão do metrônomo e várias correções.",
+      "body": "Maior precisão do metrônomo e várias correções.",
       "update": "Atualizar",
       "later": "Mais tarde"
+    },
+    "nl": {
+      "title": "Update beschikbaar",
+      "body": "Strakkere metronoom-timing en een aantal correcties.",
+      "update": "Bijwerken",
+      "later": "Later"
+    },
+    "da": {
+      "title": "Opdatering tilgængelig",
+      "body": "Strammere metronom-timing og en håndfuld rettelser.",
+      "update": "Opdater",
+      "later": "Senere"
+    },
+    "sv": {
+      "title": "Uppdatering tillgänglig",
+      "body": "Stramare metronomtajming och ett antal korrigeringar.",
+      "update": "Uppdatera",
+      "later": "Senare"
+    },
+    "no": {
+      "title": "Oppdatering tilgjengelig",
+      "body": "Strammere metronom-timing og noen rettelser.",
+      "update": "Oppdater",
+      "later": "Senere"
+    },
+    "fi": {
+      "title": "Päivitys saatavilla",
+      "body": "Tarkempi metronomin ajoitus ja joukko korjauksia.",
+      "update": "Päivitä",
+      "later": "Myöhemmin"
+    },
+    "pl": {
+      "title": "Dostępna aktualizacja",
+      "body": "Dokładniejsze taktowanie metronomu i kilka poprawek.",
+      "update": "Aktualizuj",
+      "later": "Później"
+    },
+    "cs": {
+      "title": "Dostupná aktualizace",
+      "body": "Přesnější časování metronomu a několik oprav.",
+      "update": "Aktualizovat",
+      "later": "Později"
+    },
+    "hu": {
+      "title": "Frissítés érhető el",
+      "body": "Pontosabb metronóm-időzítés és néhány javítás.",
+      "update": "Frissítés",
+      "later": "Később"
+    },
+    "ru": {
+      "title": "Доступно обновление",
+      "body": "Точность метронома улучшена, исправлены ошибки.",
+      "update": "Обновить",
+      "later": "Позже"
+    },
+    "uk": {
+      "title": "Доступне оновлення",
+      "body": "Точність метронома покращено, виправлено помилки.",
+      "update": "Оновити",
+      "later": "Пізніше"
+    },
+    "ar": {
+      "title": "يتوفر تحديث",
+      "body": "ضبط أدق لتوقيت المترونوم مع عدة إصلاحات.",
+      "update": "تحديث",
+      "later": "لاحقًا"
     },
     "ja": {
       "title": "アップデートがあります",
@@ -53,11 +119,41 @@
       "update": "更新",
       "later": "後で"
     },
-    "ru": {
-      "title": "Доступно обновление",
-      "body": "Точность метронома улучшена, исправлены ошибки.",
-      "update": "Обновить",
-      "later": "Позже"
+    "ko": {
+      "title": "업데이트 사용 가능",
+      "body": "메트로놈 정확도가 향상되고 여러 문제가 수정되었습니다.",
+      "update": "업데이트",
+      "later": "나중에"
+    },
+    "zh": {
+      "title": "有新版本",
+      "body": "节拍器走时更精准，并修复了若干问题。",
+      "update": "更新",
+      "later": "稍后"
+    },
+    "th": {
+      "title": "มีอัปเดตใหม่",
+      "body": "จังหวะเมโทรนอมแม่นยำขึ้น พร้อมการแก้ไขหลายจุด",
+      "update": "อัปเดต",
+      "later": "ภายหลัง"
+    },
+    "vi": {
+      "title": "Đã có bản cập nhật",
+      "body": "Nhịp metronome chính xác hơn và một vài sửa lỗi.",
+      "update": "Cập nhật",
+      "later": "Để sau"
+    },
+    "id": {
+      "title": "Pembaruan tersedia",
+      "body": "Ketepatan metronom meningkat dan beberapa perbaikan.",
+      "update": "Perbarui",
+      "later": "Nanti"
+    },
+    "ca": {
+      "title": "Actualització disponible",
+      "body": "Més precisió del metrònom i diverses correccions.",
+      "update": "Actualitza",
+      "later": "Més tard"
     }
   }
 }
