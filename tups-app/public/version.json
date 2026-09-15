@@ -1,8 +1,8 @@
 {
-  "_comment": "SIRA ONEMLI: bir surumu buraya ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. Guncelleyecegin yer: latest (surum) + i18n[dil].body (metin). Dosyada olmayan dil icin en kullanilir.",
+  "_comment": "SIRA ONEMLI: bir surumu buraya ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. Her surumde iki sey degisir: latest (surum) + i18n[dil].body (ne degisti, 25 dilin hepsinde). title/update/later sabit.",
   "latest": {
-    "ios": "2.5.3",
-    "android": "2.5.3"
+    "ios": "2.5.2",
+    "android": "2.5.1"
   },
   "i18n": {
     "en": {
