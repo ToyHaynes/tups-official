@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video tutorial - Tups</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  a { color: #c8632a; }
+  h1 { font-size: 1.9rem; margin-bottom: 0.6em; }
+  .soon { font-size: 1.15rem; font-weight: 600; }
+  .mail { font-size: 1.05rem; }
+  .back { display: inline-block; margin-bottom: 24px; font-size: 0.95rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0e0e10; }
+  }
+</style>
+</head>
+<body>
+
+<a class="back" href="https://www.tupstheapp.com/">Tups</a>
+
+<h1 id="title">Video tutorial</h1>
+<p class="soon" id="soon">Our new video tutorial is coming very soon.</p>
+<p><span id="guide">For more about each module, open the GUIDE in Settings or tap the info button next to any module name.</span> <span id="social">You can also find short videos on our social media.</span></p>
+<p class="mail"><span id="ask">Any question? Email us anytime:</span><br><a href="mailto:support@tupstheapp.com">support@tupstheapp.com</a></p>
+
+<script>
+// The visitor's language among the app's 27, English otherwise
+var T = {"en": {"title": "Video tutorial", "soon": "Our new video tutorial is coming very soon.", "guide": "For more about each module, open the GUIDE in Settings or tap the info button next to any module name.", "social": "You can also find short videos on our social media.", "ask": "Any question? Email us anytime:"}, "tr": {"title": "Video rehber", "soon": "Yeni video rehberimiz çok yakında yayında.", "guide": "Her modül hakkında daha fazla bilgi için Ayarlar'daki REHBER bölümünü aç ya da herhangi bir modül adının yanındaki bilgi düğmesine dokun.", "social": "Sosyal medyadaki videolarımıza da göz atabilirsin.", "ask": "Her türlü sorun için bize istediğin zaman yazabilirsin:"}, "de": {"title": "Video-Tutorial", "soon": "Unser neues Video-Tutorial kommt sehr bald.", "guide": "Mehr zu jedem Modul findest du im Bereich ANLEITUNG unter Einstellungen, oder tippe auf die Info-Taste neben einem Modulnamen.", "social": "Kurze Videos findest du auch in unseren sozialen Medien.", "ask": "Fragen? Schreib uns jederzeit:"}, "fr": {"title": "Tutoriel vidéo", "soon": "Notre nouveau tutoriel vidéo arrive très bientôt.", "guide": "Pour en savoir plus sur chaque module, ouvre la section GUIDE dans Réglages ou touche le bouton d'info à côté du nom d'un module.", "social": "Tu trouveras aussi de courtes vidéos sur nos réseaux sociaux.", "ask": "Une question ? Écris-nous quand tu veux :"}, "es": {"title": "Videotutorial", "soon": "Nuestro nuevo videotutorial llegará muy pronto.", "guide": "Para saber más de cada módulo, abre la sección GUÍA en Ajustes o toca el botón de información junto al nombre de cualquier módulo.", "social": "También encontrarás vídeos cortos en nuestras redes sociales.", "ask": "¿Alguna pregunta? Escríbenos cuando quieras:"}, "ca": {"title": "Vídeo tutorial", "soon": "El nostre nou videotutorial arriba molt aviat.", "guide": "Per saber-ne més de cada mòdul, obre la secció GUIA a Configuració o toca el botó d'informació al costat del nom de qualsevol mòdul.", "social": "També trobaràs vídeos curts a les nostres xarxes socials.", "ask": "Tens alguna pregunta? Escriu-nos quan vulguis:"}, "it": {"title": "Video tutorial", "soon": "Il nostro nuovo video tutorial arriva molto presto.", "guide": "Per saperne di più su ogni modulo, apri la sezione GUIDA in Impostazioni oppure tocca il pulsante info accanto al nome di un modulo.", "social": "Trovi anche brevi video sui nostri social.", "ask": "Domande? Scrivici quando vuoi:"}, "pt": {"title": "Tutorial em vídeo", "soon": "Nosso novo tutorial em vídeo chega muito em breve.", "guide": "Para saber mais sobre cada módulo, abra a seção GUIA em Ajustes ou toque no botão de informações ao lado do nome de qualquer módulo.", "social": "Você também encontra vídeos curtos nas nossas redes sociais.", "ask": "Alguma dúvida? Escreva para a gente quando quiser:"}, "pt_PT": {"title": "Tutorial em vídeo", "soon": "O nosso novo tutorial em vídeo chega muito em breve.", "guide": "Para saberes mais sobre cada módulo, abre o GUIA nas Definições ou toca no botão de informação junto ao nome de qualquer módulo.", "social": "Também encontras vídeos curtos nas nossas redes sociais.", "ask": "Alguma dúvida? Escreve-nos quando quiseres:"}, "nl": {"title": "Videotutorial", "soon": "Onze nieuwe videotutorial komt heel binnenkort.", "guide": "Meer over elke module vind je in het gedeelte HANDLEIDING onder Instellingen, of tik op de infoknop naast de naam van een module.", "social": "Korte video's vind je ook op onze sociale media.", "ask": "Vragen? Mail ons wanneer je wilt:"}, "sv": {"title": "Videoguide", "soon": "Vår nya videoguide kommer mycket snart.", "guide": "Vill du veta mer om varje modul? Öppna avsnittet GUIDE under Inställningar eller tryck på infoknappen bredvid ett modulnamn.", "social": "Korta videor hittar du också i våra sociala medier.", "ask": "Frågor? Mejla oss när du vill:"}, "no": {"title": "Videoguide", "soon": "Den nye videoveiledningen vår kommer veldig snart.", "guide": "Vil du vite mer om hver modul? Åpne delen VEILEDNING under Innstillinger, eller trykk på infoknappen ved siden av et modulnavn.", "social": "Korte videoer finner du også på våre sosiale medier.", "ask": "Spørsmål? Send oss en e-post når som helst:"}, "da": {"title": "Videoguide", "soon": "Vores nye videovejledning kommer meget snart.", "guide": "Vil du vide mere om hvert modul, så åbn afsnittet GUIDE under Indstillinger, eller tryk på info-knappen ved siden af et modulnavn.", "social": "Du kan også finde korte videoer på vores sociale medier.", "ask": "Spørgsmål? Skriv til os når som helst:"}, "fi": {"title": "Video-opas", "soon": "Uusi video-opas julkaistaan aivan pian.", "guide": "Lisätietoa jokaisesta moduulista löydät Asetukset-valikon OPAS-osiosta, tai napauta minkä tahansa moduulin nimen vieressä olevaa info-painiketta.", "social": "Lyhyitä videoita löydät myös sosiaalisesta mediastamme.", "ask": "Kysyttävää? Kirjoita meille milloin tahansa:"}, "cs": {"title": "Video návod", "soon": "Náš nový videonávod bude už brzy.", "guide": "Víc o jednotlivých modulech najdeš v sekci PRŮVODCE v Nastavení, nebo klepni na tlačítko info vedle názvu kteréhokoli modulu.", "social": "Krátká videa najdeš také na našich sociálních sítích.", "ask": "Máš otázku? Napiš nám kdykoli:"}, "pl": {"title": "Samouczek wideo", "soon": "Nasz nowy poradnik wideo pojawi się już wkrótce.", "guide": "Więcej o każdym module znajdziesz w sekcji PRZEWODNIK w Ustawieniach. Możesz też dotknąć przycisku info obok nazwy dowolnego modułu.", "social": "Krótkie filmy znajdziesz też w naszych mediach społecznościowych.", "ask": "Masz pytanie? Napisz do nas w dowolnej chwili:"}, "hu": {"title": "Videós útmutató", "soon": "Az új videós útmutatónk hamarosan megjelenik.", "guide": "Az egyes modulokról többet a Beállítások ÚTMUTATÓ részében találsz, vagy koppints bármelyik modul neve melletti info gombra.", "social": "Rövid videókat a közösségi oldalainkon is találsz.", "ask": "Kérdésed van? Írj nekünk bármikor:"}, "ru": {"title": "Видеоурок", "soon": "Наш новый видеоурок выйдет совсем скоро.", "guide": "Подробнее о каждом модуле в разделе РУКОВОДСТВО в Настройках. Или нажми кнопку info рядом с названием любого модуля.", "social": "Короткие видео есть и в наших соцсетях.", "ask": "Есть вопросы? Пиши нам в любое время:"}, "uk": {"title": "Відеоурок", "soon": "Наш новий відеоурок вийде зовсім скоро.", "guide": "Докладніше про кожен модуль у розділі ПОСІБНИК у Налаштуваннях. Або торкнися кнопки info поруч із назвою будь-якого модуля.", "social": "Короткі відео є й у наших соцмережах.", "ask": "Є запитання? Пиши нам будь-коли:"}, "ja": {"title": "動画チュートリアル", "soon": "新しい動画チュートリアルをまもなく公開します。", "guide": "各モジュールについて詳しくは、設定のガイドを開くか、モジュール名の横にある情報ボタンをタップしてください。", "social": "SNS でも短い動画を公開しています。", "ask": "ご質問はいつでもメールでどうぞ："}, "ko": {"title": "동영상 튜토리얼", "soon": "새 동영상 튜토리얼이 곧 공개됩니다.", "guide": "각 모듈에 대해 더 알고 싶다면 설정의 가이드를 열거나, 모듈 이름 옆의 정보 버튼을 눌러 보세요.", "social": "SNS에서도 짧은 영상을 볼 수 있습니다.", "ask": "궁금한 점이 있으면 언제든 메일 주세요:"}, "zh_Hans": {"title": "视频教程", "soon": "全新的视频教程即将上线。", "guide": "想进一步了解每个模块，可以打开设置里的指南，或点按任意模块名称旁边的信息按钮。", "social": "你也可以在我们的社交媒体上看到短视频。", "ask": "有任何问题，随时给我们发邮件："}, "zh_Hant": {"title": "影片教學", "soon": "全新的影片教學即將上線。", "guide": "想進一步了解每個模組，可以打開設定裡的指南，或點按任一模組名稱旁邊的資訊按鈕。", "social": "你也可以在我們的社群媒體上看到短影片。", "ask": "有任何問題，隨時寄信給我們："}, "ar": {"title": "فيديو تعليمي", "soon": "فيديو الشرح الجديد سيصدر قريبًا جدًا.", "guide": "لمعرفة المزيد عن كل وحدة، افتح قسم الدليل في الإعدادات أو اضغط على زر المعلومات بجانب اسم أي وحدة.", "social": "يمكنك أيضًا مشاهدة فيديوهات قصيرة على حساباتنا في وسائل التواصل الاجتماعي.", "ask": "لديك سؤال؟ راسلنا في أي وقت:"}, "th": {"title": "วิดีโอสอนใช้งาน", "soon": "วิดีโอสอนใช้งานใหม่ของเรากำลังจะมาเร็ว ๆ นี้", "guide": "อยากรู้เพิ่มเติมเกี่ยวกับแต่ละโมดูล เปิดส่วนคู่มือในการตั้งค่า หรือแตะปุ่มข้อมูลข้างชื่อโมดูลใดก็ได้", "social": "คุณยังดูวิดีโอสั้น ๆ ได้ในโซเชียลมีเดียของเรา", "ask": "มีคำถาม? อีเมลหาเราได้ทุกเมื่อ:"}, "vi": {"title": "Video hướng dẫn", "soon": "Video hướng dẫn mới của chúng tôi sắp ra mắt.", "guide": "Để tìm hiểu thêm về từng mô-đun, hãy mở mục HƯỚNG DẪN trong Cài đặt hoặc chạm vào nút thông tin cạnh tên bất kỳ mô-đun nào.", "social": "Bạn cũng có thể xem các video ngắn trên mạng xã hội của chúng tôi.", "ask": "Có câu hỏi? Hãy email cho chúng tôi bất cứ lúc nào:"}, "id": {"title": "Video tutorial", "soon": "Video tutorial baru kami segera hadir.", "guide": "Untuk info lebih lanjut tentang setiap modul, buka bagian PANDUAN di Pengaturan atau ketuk tombol info di samping nama modul mana pun.", "social": "Kamu juga bisa menonton video pendek di media sosial kami.", "ask": "Ada pertanyaan? Kirim email kapan saja:"}};
+function pick() {
+  var langs = navigator.languages || [navigator.language || 'en'];
+  for (var i = 0; i < langs.length; i++) {
+    var l = String(langs[i]).toLowerCase();
+    if (l.indexOf('pt') === 0) return l.indexOf('pt-pt') === 0 ? 'pt_PT' : 'pt';
+    if (l.indexOf('zh') === 0) return /hant|tw|hk|mo/.test(l) ? 'zh_Hant' : 'zh_Hans';
+    if (/^(nb|nn|no)/.test(l)) return 'no';
+    var b = l.split('-')[0];
+    if (T[b]) return b;
+  }
+  return 'en';
+}
+var lang = pick(), t = T[lang];
+document.documentElement.lang = lang.replace('_', '-');
+if (lang === 'ar') document.documentElement.dir = 'rtl';
+['title', 'soon', 'guide', 'social', 'ask'].forEach(function (k) {
+  document.getElementById(k).textContent = t[k];
+});
+document.title = t.title + ' - Tups';
+</script>
+
+</body>
+</html>
