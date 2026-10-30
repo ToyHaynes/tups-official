@@ -1,163 +1,163 @@
 {
   "_comment": "SIRA ONEMLI: bir surumu 'latest'e ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. 'i18n' = guncelleme kutusu. 'messages' = surum cikarmadan degisebilen tek seyler (su an: tutorial_url). Tesekkur/deneme/anket metinleri 2.5.3'ten itibaren UYGULAMANIN ICINDE.",
   "latest": {
-    "ios": "2.5.2",
-    "android": "2.5.1"
+    "ios": "3.0.0",
+    "android": "3.0.0"
   },
   "i18n": {
     "en": {
       "title": "Update available",
-      "body": "Tighter metronome timing and a handful of fixes.",
+      "body": "Nested tuplets, metric modulation, 90 world rhythms and 10 new sounds.",
       "update": "Update",
       "later": "Later"
     },
     "tr": {
       "title": "Yeni sürüm var",
-      "body": "Metronom zamanlaması iyileştirildi ve birkaç düzeltme yapıldı.",
+      "body": "İç içe tupletler, metrik modülasyon, 90 dünya ritmi ve 10 yeni ses.",
       "update": "Güncelle",
       "later": "Daha sonra"
     },
     "de": {
       "title": "Update verfügbar",
-      "body": "Präziseres Metronom-Timing und einige Korrekturen.",
+      "body": "Verschachtelte Tuplets, metrische Modulation, 90 Rhythmen aus aller Welt und 10 neue Sounds.",
       "update": "Aktualisieren",
       "later": "Später"
     },
     "es": {
       "title": "Actualización disponible",
-      "body": "Mayor precisión del metrónomo y varias correcciones.",
+      "body": "Tuplets anidados, modulación métrica, 90 ritmos del mundo y 10 sonidos nuevos.",
       "update": "Actualizar",
       "later": "Más tarde"
     },
     "fr": {
       "title": "Mise à jour disponible",
-      "body": "Timing du métronome affiné et quelques corrections.",
+      "body": "Tuplets imbriqués, modulation métrique, 90 rythmes du monde et 10 nouveaux sons.",
       "update": "Mettre à jour",
       "later": "Plus tard"
     },
     "it": {
       "title": "Aggiornamento disponibile",
-      "body": "Timing del metronomo più preciso e alcune correzioni.",
+      "body": "Tuplet annidati, modulazione metrica, 90 ritmi dal mondo e 10 nuovi suoni.",
       "update": "Aggiorna",
       "later": "Più tardi"
     },
     "pt": {
       "title": "Atualização disponível",
-      "body": "Maior precisão do metrônomo e várias correções.",
+      "body": "Tuplets aninhados, modulação métrica, 90 ritmos do mundo e 10 sons novos.",
       "update": "Atualizar",
       "later": "Mais tarde"
     },
     "nl": {
       "title": "Update beschikbaar",
-      "body": "Strakkere metronoom-timing en een aantal correcties.",
+      "body": "Geneste tuplets, metrische modulatie, 90 wereldritmes en 10 nieuwe klanken.",
       "update": "Bijwerken",
       "later": "Later"
     },
     "da": {
       "title": "Opdatering tilgængelig",
-      "body": "Strammere metronom-timing og en håndfuld rettelser.",
+      "body": "Indlejrede tuplets, metrisk modulation, 90 rytmer fra hele verden og 10 nye lyde.",
       "update": "Opdater",
       "later": "Senere"
     },
     "sv": {
       "title": "Uppdatering tillgänglig",
-      "body": "Stramare metronomtajming och ett antal korrigeringar.",
+      "body": "Nästlade tuplets, metrisk modulering, 90 rytmer från hela världen och 10 nya ljud.",
       "update": "Uppdatera",
       "later": "Senare"
     },
     "no": {
       "title": "Oppdatering tilgjengelig",
-      "body": "Strammere metronom-timing og noen rettelser.",
+      "body": "Nøstede tuplets, metrisk modulasjon, 90 rytmer fra hele verden og 10 nye lyder.",
       "update": "Oppdater",
       "later": "Senere"
     },
     "fi": {
       "title": "Päivitys saatavilla",
-      "body": "Tarkempi metronomin ajoitus ja joukko korjauksia.",
+      "body": "Sisäkkäiset tupletit, metrinen modulaatio, 90 rytmiä ympäri maailmaa ja 10 uutta ääntä.",
       "update": "Päivitä",
       "later": "Myöhemmin"
     },
     "pl": {
       "title": "Dostępna aktualizacja",
-      "body": "Dokładniejsze taktowanie metronomu i kilka poprawek.",
+      "body": "Zagnieżdżone tuplety, modulacja metryczna, 90 rytmów świata i 10 nowych dźwięków.",
       "update": "Aktualizuj",
       "later": "Później"
     },
     "cs": {
       "title": "Dostupná aktualizace",
-      "body": "Přesnější časování metronomu a několik oprav.",
+      "body": "Vnořené tuplety, metrická modulace, 90 rytmů z celého světa a 10 nových zvuků.",
       "update": "Aktualizovat",
       "later": "Později"
     },
     "hu": {
       "title": "Frissítés érhető el",
-      "body": "Pontosabb metronóm-időzítés és néhány javítás.",
+      "body": "Egymásba ágyazott tupletek, metrikus moduláció, 90 ritmus a világ minden tájáról és 10 új hang.",
       "update": "Frissítés",
       "later": "Később"
     },
     "ru": {
       "title": "Доступно обновление",
-      "body": "Точность метронома улучшена, исправлены ошибки.",
+      "body": "Вложенные tuplet'ы, метрическая модуляция, 90 ритмов мира и 10 новых звуков.",
       "update": "Обновить",
       "later": "Позже"
     },
     "uk": {
       "title": "Доступне оновлення",
-      "body": "Точність метронома покращено, виправлено помилки.",
+      "body": "Вкладені tuplet'и, метрична модуляція, 90 ритмів світу та 10 нових звуків.",
       "update": "Оновити",
       "later": "Пізніше"
     },
     "ar": {
       "title": "يتوفر تحديث",
-      "body": "ضبط أدق لتوقيت المترونوم مع عدة إصلاحات.",
+      "body": "الـ tuplets المتداخلة، والتحويل المتري، و90 إيقاعًا من حول العالم، و10 أصوات جديدة.",
       "update": "تحديث",
       "later": "لاحقًا"
     },
     "ja": {
       "title": "アップデートがあります",
-      "body": "メトロノームの精度が向上し、いくつかの修正が入りました。",
+      "body": "入れ子の tuplet、メトリック・モジュレーション、世界のリズム90種、新しいサウンド10種。",
       "update": "更新",
       "later": "後で"
     },
     "ko": {
       "title": "업데이트 사용 가능",
-      "body": "메트로놈 정확도가 향상되고 여러 문제가 수정되었습니다.",
+      "body": "중첩 tuplet, 메트릭 모듈레이션, 세계 리듬 90개, 새 사운드 10개.",
       "update": "업데이트",
       "later": "나중에"
     },
     "zh": {
       "title": "有新版本",
-      "body": "节拍器走时更精准，并修复了若干问题。",
+      "body": "嵌套 tuplet、节拍调制、90 种世界节奏和 10 种新音色。",
       "update": "更新",
       "later": "稍后"
     },
     "th": {
       "title": "มีอัปเดตใหม่",
-      "body": "จังหวะเมโทรนอมแม่นยำขึ้น พร้อมการแก้ไขหลายจุด",
+      "body": "tuplet ซ้อน, metric modulation, จังหวะจากทั่วโลก 90 แบบ และเสียงใหม่ 10 เสียง",
       "update": "อัปเดต",
       "later": "ภายหลัง"
     },
     "vi": {
       "title": "Đã có bản cập nhật",
-      "body": "Nhịp metronome chính xác hơn và một vài sửa lỗi.",
+      "body": "Tuplet lồng nhau, metric modulation, 90 nhịp điệu thế giới và 10 âm thanh mới.",
       "update": "Cập nhật",
       "later": "Để sau"
     },
     "id": {
       "title": "Pembaruan tersedia",
-      "body": "Ketepatan metronom meningkat dan beberapa perbaikan.",
+      "body": "Tuplet bersarang, modulasi metrik, 90 ritme dunia, dan 10 suara baru.",
       "update": "Perbarui",
       "later": "Nanti"
     },
     "ca": {
       "title": "Actualització disponible",
-      "body": "Més precisió del metrònom i diverses correccions.",
+      "body": "Tuplets niats, modulació mètrica, 90 ritmes del món i 10 sons nous.",
       "update": "Actualitza",
       "later": "Més tard"
     },
     "zh_Hant": {
       "title": "有新版本",
-      "body": "節拍器走時更精準，並修復了若干問題。",
+      "body": "巢狀 tuplet、節拍調制、90 種世界節奏和 10 種新音色。",
       "update": "更新",
       "later": "稍後"
     }

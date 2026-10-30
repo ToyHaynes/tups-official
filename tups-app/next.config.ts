@@ -12,11 +12,17 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    return [
-      // Preset share links use /p (https://www.tupstheapp.com/p#d=...);
-      // the fallback page for users without the app lives in public/p.html.
-      { source: "/p", destination: "/p.html" },
-    ];
+    return {
+      // The home page is the static public/home.html. beforeFiles is needed
+      // because app/page.tsx would otherwise answer "/" first.
+      beforeFiles: [{ source: "/", destination: "/home.html" }],
+      afterFiles: [
+        // Preset share links use /p (https://www.tupstheapp.com/p#d=...);
+        // the fallback page for users without the app lives in public/p.html.
+        { source: "/p", destination: "/p.html" },
+      ],
+      fallback: [],
+    };
   },
 };
 
