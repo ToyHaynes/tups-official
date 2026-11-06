@@ -2,162 +2,162 @@
   "_comment": "SIRA ONEMLI: bir surumu 'latest'e ancak O PLATFORMUN MAGAZASINDA GORUNDUKTEN SONRA yaz. 'i18n' = guncelleme kutusu. 'messages' = surum cikarmadan degisebilen tek seyler (su an: tutorial_url). Tesekkur/deneme/anket metinleri 2.5.3'ten itibaren UYGULAMANIN ICINDE.",
   "latest": {
     "ios": "3.0.0",
-    "android": "3.0.0"
+    "android": "3.1.0"
   },
   "i18n": {
     "en": {
       "title": "Update available",
-      "body": "Nested tuplets, metric modulation, 90 world rhythms and 10 new sounds.",
+      "body": "Step-by-step tours in Settings › Guide, minor chords in TUP LAB Pitch and fixes.",
       "update": "Update",
       "later": "Later"
     },
     "tr": {
       "title": "Yeni sürüm var",
-      "body": "İç içe tupletler, metrik modülasyon, 90 dünya ritmi ve 10 yeni ses.",
+      "body": "Ayarlar › Rehber'de adım adım turlar, TUP LAB Pitch'te minör akorlar ve düzeltmeler.",
       "update": "Güncelle",
       "later": "Daha sonra"
     },
     "de": {
       "title": "Update verfügbar",
-      "body": "Verschachtelte Tuplets, metrische Modulation, 90 Rhythmen aus aller Welt und 10 neue Sounds.",
+      "body": "Schritt-für-Schritt-Touren unter Einstellungen › Anleitung, Moll-Akkorde in TUP LAB Pitch und Fehlerbehebungen.",
       "update": "Aktualisieren",
       "later": "Später"
     },
     "es": {
       "title": "Actualización disponible",
-      "body": "Tuplets anidados, modulación métrica, 90 ritmos del mundo y 10 sonidos nuevos.",
+      "body": "Recorridos paso a paso en Ajustes › Guía, acordes menores en TUP LAB Pitch y correcciones.",
       "update": "Actualizar",
       "later": "Más tarde"
     },
     "fr": {
       "title": "Mise à jour disponible",
-      "body": "Tuplets imbriqués, modulation métrique, 90 rythmes du monde et 10 nouveaux sons.",
+      "body": "Visites guidées pas à pas dans Réglages › Guide, accords mineurs dans TUP LAB Pitch et corrections.",
       "update": "Mettre à jour",
       "later": "Plus tard"
     },
     "it": {
       "title": "Aggiornamento disponibile",
-      "body": "Tuplet annidati, modulazione metrica, 90 ritmi dal mondo e 10 nuovi suoni.",
+      "body": "Tour passo dopo passo in Impostazioni › Guida, accordi minori in TUP LAB Pitch e correzioni.",
       "update": "Aggiorna",
       "later": "Più tardi"
     },
     "pt": {
       "title": "Atualização disponível",
-      "body": "Tuplets aninhados, modulação métrica, 90 ritmos do mundo e 10 sons novos.",
+      "body": "Visitas guiadas passo a passo no Guia, acordes menores no TUP LAB Pitch e correções.",
       "update": "Atualizar",
       "later": "Mais tarde"
     },
     "nl": {
       "title": "Update beschikbaar",
-      "body": "Geneste tuplets, metrische modulatie, 90 wereldritmes en 10 nieuwe klanken.",
+      "body": "Stapsgewijze rondleidingen in Instellingen › Handleiding, mineurakkoorden in TUP LAB Pitch en bugfixes.",
       "update": "Bijwerken",
       "later": "Later"
     },
     "da": {
       "title": "Opdatering tilgængelig",
-      "body": "Indlejrede tuplets, metrisk modulation, 90 rytmer fra hele verden og 10 nye lyde.",
+      "body": "Trinvise rundvisninger under Indstillinger › Guide, molakkorder i TUP LAB Pitch og fejlrettelser.",
       "update": "Opdater",
       "later": "Senere"
     },
     "sv": {
       "title": "Uppdatering tillgänglig",
-      "body": "Nästlade tuplets, metrisk modulering, 90 rytmer från hela världen och 10 nya ljud.",
+      "body": "Steg-för-steg-rundturer under Inställningar › Guide, mollackord i TUP LAB Pitch och buggfixar.",
       "update": "Uppdatera",
       "later": "Senare"
     },
     "no": {
       "title": "Oppdatering tilgjengelig",
-      "body": "Nøstede tuplets, metrisk modulasjon, 90 rytmer fra hele verden og 10 nye lyder.",
+      "body": "Trinnvise omvisninger under Innstillinger › Veiledning, mollakkorder i TUP LAB Pitch og feilrettinger.",
       "update": "Oppdater",
       "later": "Senere"
     },
     "fi": {
       "title": "Päivitys saatavilla",
-      "body": "Sisäkkäiset tupletit, metrinen modulaatio, 90 rytmiä ympäri maailmaa ja 10 uutta ääntä.",
+      "body": "Vaiheittaiset kierrokset kohdassa Asetukset › Opas, mollisointuja TUP LAB -moduulin Pitch-tilaan ja korjauksia.",
       "update": "Päivitä",
       "later": "Myöhemmin"
     },
     "pl": {
       "title": "Dostępna aktualizacja",
-      "body": "Zagnieżdżone tuplety, modulacja metryczna, 90 rytmów świata i 10 nowych dźwięków.",
+      "body": "Samouczki krok po kroku w sekcji Ustawienia › Przewodnik, akordy molowe w TUP LAB Pitch i poprawki.",
       "update": "Aktualizuj",
       "later": "Później"
     },
     "cs": {
       "title": "Dostupná aktualizace",
-      "body": "Vnořené tuplety, metrická modulace, 90 rytmů z celého světa a 10 nových zvuků.",
+      "body": "Prohlídky krok za krokem v Nastavení › Průvodce, mollové akordy v TUP LAB Pitch a opravy.",
       "update": "Aktualizovat",
       "later": "Později"
     },
     "hu": {
       "title": "Frissítés érhető el",
-      "body": "Egymásba ágyazott tupletek, metrikus moduláció, 90 ritmus a világ minden tájáról és 10 új hang.",
+      "body": "Lépésenkénti bemutatók (Beállítások › Útmutató), moll akkordok a TUP LAB Pitch módjában és javítások.",
       "update": "Frissítés",
       "later": "Később"
     },
     "ru": {
       "title": "Доступно обновление",
-      "body": "Вложенные tuplet'ы, метрическая модуляция, 90 ритмов мира и 10 новых звуков.",
+      "body": "Пошаговые туры в разделе Настройки › Руководство, минорные аккорды в TUP LAB Pitch и исправления.",
       "update": "Обновить",
       "later": "Позже"
     },
     "uk": {
       "title": "Доступне оновлення",
-      "body": "Вкладені tuplet'и, метрична модуляція, 90 ритмів світу та 10 нових звуків.",
+      "body": "Покрокові тури в розділі Налаштування › Посібник, мінорні акорди в TUP LAB Pitch і виправлення.",
       "update": "Оновити",
       "later": "Пізніше"
     },
     "ar": {
       "title": "يتوفر تحديث",
-      "body": "الـ tuplets المتداخلة، والتحويل المتري، و90 إيقاعًا من حول العالم، و10 أصوات جديدة.",
+      "body": "جولات خطوة بخطوة في الإعدادات › الدليل، وتآلفات مينور في TUP LAB Pitch، وإصلاحات.",
       "update": "تحديث",
       "later": "لاحقًا"
     },
     "ja": {
       "title": "アップデートがあります",
-      "body": "入れ子の tuplet、メトリック・モジュレーション、世界のリズム90種、新しいサウンド10種。",
+      "body": "設定 › ガイド のステップごとのツアー、TUP LAB Pitch のマイナーコード、不具合の修正。",
       "update": "更新",
       "later": "後で"
     },
     "ko": {
       "title": "업데이트 사용 가능",
-      "body": "중첩 tuplet, 메트릭 모듈레이션, 세계 리듬 90개, 새 사운드 10개.",
+      "body": "설정 › 가이드의 단계별 투어, TUP LAB Pitch의 마이너 코드, 버그 수정.",
       "update": "업데이트",
       "later": "나중에"
     },
     "zh": {
       "title": "有新版本",
-      "body": "嵌套 tuplet、节拍调制、90 种世界节奏和 10 种新音色。",
+      "body": "设置 › 指南 中的分步导览、TUP LAB Pitch 的小三和弦，以及问题修复。",
       "update": "更新",
       "later": "稍后"
     },
     "th": {
       "title": "มีอัปเดตใหม่",
-      "body": "tuplet ซ้อน, metric modulation, จังหวะจากทั่วโลก 90 แบบ และเสียงใหม่ 10 เสียง",
+      "body": "ทัวร์ทีละขั้นใน การตั้งค่า › คู่มือ คอร์ดไมเนอร์ใน TUP LAB Pitch และการแก้ไขข้อบกพร่อง",
       "update": "อัปเดต",
       "later": "ภายหลัง"
     },
     "vi": {
       "title": "Đã có bản cập nhật",
-      "body": "Tuplet lồng nhau, metric modulation, 90 nhịp điệu thế giới và 10 âm thanh mới.",
+      "body": "Các vòng hướng dẫn từng bước trong Cài đặt › Hướng dẫn, hợp âm thứ trong TUP LAB Pitch và các bản sửa lỗi.",
       "update": "Cập nhật",
       "later": "Để sau"
     },
     "id": {
       "title": "Pembaruan tersedia",
-      "body": "Tuplet bersarang, modulasi metrik, 90 ritme dunia, dan 10 suara baru.",
+      "body": "Tur langkah demi langkah di Pengaturan › Panduan, akor minor di TUP LAB Pitch, dan perbaikan.",
       "update": "Perbarui",
       "later": "Nanti"
     },
     "ca": {
       "title": "Actualització disponible",
-      "body": "Tuplets niats, modulació mètrica, 90 ritmes del món i 10 sons nous.",
+      "body": "Recorreguts pas a pas a Configuració › Guia, acords menors a TUP LAB Pitch i correccions.",
       "update": "Actualitza",
       "later": "Més tard"
     },
     "zh_Hant": {
       "title": "有新版本",
-      "body": "巢狀 tuplet、節拍調制、90 種世界節奏和 10 種新音色。",
+      "body": "設定 › 指南 中的分步導覽、TUP LAB Pitch 的小三和弦，以及問題修正。",
       "update": "更新",
       "later": "稍後"
     }
