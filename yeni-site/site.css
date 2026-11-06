@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/IBMPlexMono-latin-ext-0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/IBMPlexMono-latin-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/IBMPlexMono-latin-ext-2.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/IBMPlexMono-latin-3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Inter-latin-ext-4.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Inter-latin-5.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Inter-latin-ext-4.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Inter-latin-5.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-ext-6.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-ext-6.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-ext-6.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-ext-6.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/LeagueSpartan-latin-7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---------- shared tokens (same as the home page) ---------- */
+:root {
+  --bg: #07080c;
+  --surface: #11141a;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-2: rgba(255, 255, 255, 0.14);
+  --text: #eceef1;
+  --muted: #8d919a;
+  --faint: #5a5e67;
+  --cyan: #4fc3df;
+  --teal: #62d5be;
+  --amber: #e8b766;
+  --display: "League Spartan", "Inter", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+/* ---------- sub-pages: privacy, terms, support, guide ---------- */
+.page * { box-sizing: border-box; }
+.page {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.7 var(--body);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+.page::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(70vmax 50vmax at 0% 0%, rgba(32, 92, 102, 0.22), transparent 60%);
+}
+.page a { color: inherit; }
+.page :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+
+.page-nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(7, 8, 12, 0.78);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.page-nav .in {
+  max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px);
+  height: 60px; display: flex; align-items: center; justify-content: space-between;
+}
+.wordmark { display: inline-block; font: 600 42px/1 var(--display); letter-spacing: 0.02em; color: var(--text); text-decoration: none; white-space: nowrap; }
+/* as in the store header: the icon stands in for the T, cap-height tall, on the same baseline as "ups" */
+.wordmark svg { display: inline-block; vertical-align: baseline; height: 0.66em; width: calc(0.66em * 773 / 764); margin-right: 0.085em; }
+.page-nav .wordmark { position: relative; top: 4px; }
+.page-nav .links { display: flex; gap: 26px; font-size: 14px; color: var(--muted); }
+.page-nav .links a { text-decoration: none; }
+.page-nav .links a:hover, .page-nav .links a[aria-current] { color: var(--text); }
+@media (max-width: 560px) { .page-nav .links { gap: 16px; font-size: 13px; } .page-nav .links .wide { display: none; } }
+
+.doc { max-width: 760px; margin: 0 auto; padding: clamp(48px, 8vw, 96px) clamp(16px, 4vw, 40px) 96px; }
+.eyebrow { font: 500 11px/1 var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+.doc h1 { font: 300 clamp(38px, 6vw, 60px)/1.02 var(--display); letter-spacing: -0.01em; margin: 18px 0 14px; }
+.doc h1 b { font-weight: 600; }
+.doc .updated { font: 400 12px/1.5 var(--mono); letter-spacing: .06em; color: var(--faint); margin: 0 0 40px; }
+.doc .intro { font-size: 18px; color: var(--muted); margin: 0 0 8px; }
+.doc .intro strong { color: var(--text); font-weight: 500; }
+.doc h2 {
+  font: 400 24px/1.25 var(--display);
+  margin: 56px 0 14px; padding-top: 22px;
+  border-top: 1px solid var(--line);
+  display: flex; gap: 14px; align-items: baseline;
+}
+.doc h2 .n { font: 500 11px/1 var(--mono); letter-spacing: .16em; color: var(--faint); min-width: 22px; }
+.doc h3 { font: 500 16px/1.4 var(--body); margin: 26px 0 8px; }
+.doc p, .doc li { color: var(--muted); }
+.doc p strong, .doc li strong { color: var(--text); font-weight: 500; }
+.doc ul { padding: 0; margin: 0 0 12px; list-style: none; }
+.doc li { position: relative; padding: 6px 0 6px 20px; }
+.doc li::before { content: ""; position: absolute; left: 0; top: 16px; width: 7px; height: 7px; border-radius: 2px; background: var(--teal); opacity: .75; }
+.doc a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line-2); }
+.doc a:hover { border-color: var(--text); }
+.callout {
+  margin: 28px 0; padding: 18px 22px;
+  border: 1px solid var(--line); border-radius: 14px;
+  background: rgba(17, 20, 26, .6);
+  color: var(--muted);
+}
+.callout strong { color: var(--text); font-weight: 500; }
+.doc .effective { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 14px; color: var(--faint); }
+
+.page-foot { border-top: 1px solid var(--line); padding: 32px 0 48px; font-size: 14px; color: var(--muted); }
+.page-foot .in {
+  max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px);
+  display: flex; flex-wrap: wrap; gap: 14px 26px; justify-content: space-between;
+}
+.page-foot nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.page-foot a { text-decoration: none; }
+.page-foot a:hover { color: var(--text); }
