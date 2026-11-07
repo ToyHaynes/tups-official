@@ -107,13 +107,12 @@ h1 b, h2 b, h3 b { font-weight: 600; }
 .wordmark { display: inline-block; font: 600 42px/1 var(--display); letter-spacing: 0.02em; color: var(--text); text-decoration: none; white-space: nowrap; }
 /* as in the store header: the icon stands in for the T, cap-height tall, on the same baseline as "ups" */
 .wordmark svg { display: inline-block; vertical-align: baseline; height: 0.66em; width: calc(0.66em * 773 / 764); margin-right: 0.085em; }
-/* the big logo docks into the nav as you scroll; until then the nav's own logo waits hidden */
+/* the nav's logo stays hidden until the big one has scrolled away, then fades in */
 /* nudge down so the icon+ups block, not the p's tail, centres on the Get Tups button */
 .nav .wordmark { position: relative; top: 4px; }
-.js .nav .wordmark { opacity: 0; }
-.js .nav.docked .wordmark { opacity: 1; }
-.hero-mark { position: relative; z-index: 30; font-size: clamp(60px, 8vw, 112px); margin: 0 0 clamp(28px, 4vw, 44px); transform-origin: 0 0; will-change: transform; }
-.hero-mark.gone { visibility: hidden; }
+.js .nav .wordmark { opacity: 0; transform: translateY(6px); pointer-events: none; transition: opacity .35s ease, transform .35s ease; }
+.js .nav.docked .wordmark { opacity: 1; transform: none; pointer-events: auto; }
+.hero-mark { font-size: clamp(60px, 8vw, 112px); margin: 0 0 clamp(28px, 4vw, 44px); }
 .nav-links { display: flex; gap: 32px; font-size: 14px; color: var(--muted); }
 .nav-links a:hover { color: var(--text); }
 .pill {
@@ -873,35 +872,13 @@ footer .wordmark { font-size: 20px; color: var(--text); }
     if (tabs.length) show(0);
   });
 
-  // ---------- the big logo docks into the nav ----------
-  // Scrolling carries the hero logo up to the nav's height by itself; we only
-  // slide it sideways and shrink it, so it lands exactly on the nav's logo.
+  // ---------- the nav logo fades in once the big one has scrolled away ----------
   const nav = document.getElementById('nav');
-  const heroMark = document.getElementById('heroMark');
-  const navMark = nav.querySelector('.wordmark');
-  let dock = null;
-  function measureDock() {
-    heroMark.style.transform = 'none';
-    const h = heroMark.getBoundingClientRect(), n = navMark.getBoundingClientRect();
-    dock = {
-      range: h.top + scrollY - n.top,
-      dx: n.left - h.left,
-      scale: n.height / h.height,
-    };
-    updateDock();
-  }
-  function updateDock() {
-    const t = dock.range > 0 ? Math.min(1, Math.max(0, scrollY / dock.range)) : 1;
-    heroMark.style.transform = `translateX(${dock.dx * t}px) scale(${1 + (dock.scale - 1) * t})`;
-    const docked = t >= 1;
-    heroMark.classList.toggle('gone', docked);
-    nav.classList.toggle('docked', docked);
-    nav.classList.toggle('scrolled', scrollY > 8);
-  }
-  addEventListener('scroll', () => dock && updateDock(), { passive: true });
-  addEventListener('resize', measureDock);
-  document.fonts.ready.then(measureDock);
-  measureDock();
+  new IntersectionObserver(([e]) => nav.classList.toggle('docked', !e.isIntersecting),
+    { rootMargin: '-64px 0px 0px 0px' }).observe(document.getElementById('heroMark'));
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   }), { rootMargin: '0px 0px -8% 0px' });
