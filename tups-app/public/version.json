@@ -7,157 +7,157 @@
   "i18n": {
     "en": {
       "title": "Update available",
-      "body": "Step-by-step tours in Settings › Guide, minor chords in TUP LAB Pitch and fixes.",
+      "body": "TUPS 3.2 is here.",
       "update": "Update",
       "later": "Later"
     },
     "tr": {
       "title": "Yeni sürüm var",
-      "body": "Ayarlar › Rehber'de adım adım turlar, TUP LAB Pitch'te minör akorlar ve düzeltmeler.",
+      "body": "TUPS 3.2 yayında.",
       "update": "Güncelle",
       "later": "Daha sonra"
     },
     "de": {
       "title": "Update verfügbar",
-      "body": "Schritt-für-Schritt-Touren unter Einstellungen › Anleitung, Moll-Akkorde in TUP LAB Pitch und Fehlerbehebungen.",
+      "body": "TUPS 3.2 ist da.",
       "update": "Aktualisieren",
       "later": "Später"
     },
     "es": {
       "title": "Actualización disponible",
-      "body": "Recorridos paso a paso en Ajustes › Guía, acordes menores en TUP LAB Pitch y correcciones.",
+      "body": "Ya está aquí TUPS 3.2.",
       "update": "Actualizar",
       "later": "Más tarde"
     },
     "fr": {
       "title": "Mise à jour disponible",
-      "body": "Visites guidées pas à pas dans Réglages › Guide, accords mineurs dans TUP LAB Pitch et corrections.",
+      "body": "TUPS 3.2 est disponible.",
       "update": "Mettre à jour",
       "later": "Plus tard"
     },
     "it": {
       "title": "Aggiornamento disponibile",
-      "body": "Tour passo dopo passo in Impostazioni › Guida, accordi minori in TUP LAB Pitch e correzioni.",
+      "body": "TUPS 3.2 è disponibile.",
       "update": "Aggiorna",
       "later": "Più tardi"
     },
     "pt": {
       "title": "Atualização disponível",
-      "body": "Visitas guiadas passo a passo no Guia, acordes menores no TUP LAB Pitch e correções.",
+      "body": "O TUPS 3.2 chegou.",
       "update": "Atualizar",
       "later": "Mais tarde"
     },
     "nl": {
       "title": "Update beschikbaar",
-      "body": "Stapsgewijze rondleidingen in Instellingen › Handleiding, mineurakkoorden in TUP LAB Pitch en bugfixes.",
+      "body": "TUPS 3.2 is er.",
       "update": "Bijwerken",
       "later": "Later"
     },
     "da": {
       "title": "Opdatering tilgængelig",
-      "body": "Trinvise rundvisninger under Indstillinger › Guide, molakkorder i TUP LAB Pitch og fejlrettelser.",
+      "body": "TUPS 3.2 er her.",
       "update": "Opdater",
       "later": "Senere"
     },
     "sv": {
       "title": "Uppdatering tillgänglig",
-      "body": "Steg-för-steg-rundturer under Inställningar › Guide, mollackord i TUP LAB Pitch och buggfixar.",
+      "body": "TUPS 3.2 är här.",
       "update": "Uppdatera",
       "later": "Senare"
     },
     "no": {
       "title": "Oppdatering tilgjengelig",
-      "body": "Trinnvise omvisninger under Innstillinger › Veiledning, mollakkorder i TUP LAB Pitch og feilrettinger.",
+      "body": "TUPS 3.2 er her.",
       "update": "Oppdater",
       "later": "Senere"
     },
     "fi": {
       "title": "Päivitys saatavilla",
-      "body": "Vaiheittaiset kierrokset kohdassa Asetukset › Opas, mollisointuja TUP LAB -moduulin Pitch-tilaan ja korjauksia.",
+      "body": "TUPS 3.2 on täällä.",
       "update": "Päivitä",
       "later": "Myöhemmin"
     },
     "pl": {
       "title": "Dostępna aktualizacja",
-      "body": "Samouczki krok po kroku w sekcji Ustawienia › Przewodnik, akordy molowe w TUP LAB Pitch i poprawki.",
+      "body": "TUPS 3.2 jest już dostępny.",
       "update": "Aktualizuj",
       "later": "Później"
     },
     "cs": {
       "title": "Dostupná aktualizace",
-      "body": "Prohlídky krok za krokem v Nastavení › Průvodce, mollové akordy v TUP LAB Pitch a opravy.",
+      "body": "TUPS 3.2 je tady.",
       "update": "Aktualizovat",
       "later": "Později"
     },
     "hu": {
       "title": "Frissítés érhető el",
-      "body": "Lépésenkénti bemutatók (Beállítások › Útmutató), moll akkordok a TUP LAB Pitch módjában és javítások.",
+      "body": "Megjelent a TUPS 3.2.",
       "update": "Frissítés",
       "later": "Később"
     },
     "ru": {
       "title": "Доступно обновление",
-      "body": "Пошаговые туры в разделе Настройки › Руководство, минорные аккорды в TUP LAB Pitch и исправления.",
+      "body": "Вышла версия TUPS 3.2.",
       "update": "Обновить",
       "later": "Позже"
     },
     "uk": {
       "title": "Доступне оновлення",
-      "body": "Покрокові тури в розділі Налаштування › Посібник, мінорні акорди в TUP LAB Pitch і виправлення.",
+      "body": "Вийшла версія TUPS 3.2.",
       "update": "Оновити",
       "later": "Пізніше"
     },
     "ar": {
       "title": "يتوفر تحديث",
-      "body": "جولات خطوة بخطوة في الإعدادات › الدليل، وتآلفات مينور في TUP LAB Pitch، وإصلاحات.",
+      "body": "TUPS 3.2 متوفر الآن.",
       "update": "تحديث",
       "later": "لاحقًا"
     },
     "ja": {
       "title": "アップデートがあります",
-      "body": "設定 › ガイド のステップごとのツアー、TUP LAB Pitch のマイナーコード、不具合の修正。",
+      "body": "TUPS 3.2 が登場しました。",
       "update": "更新",
       "later": "後で"
     },
     "ko": {
       "title": "업데이트 사용 가능",
-      "body": "설정 › 가이드의 단계별 투어, TUP LAB Pitch의 마이너 코드, 버그 수정.",
+      "body": "TUPS 3.2가 출시되었습니다.",
       "update": "업데이트",
       "later": "나중에"
     },
     "zh": {
       "title": "有新版本",
-      "body": "设置 › 指南 中的分步导览、TUP LAB Pitch 的小三和弦，以及问题修复。",
+      "body": "TUPS 3.2 现已推出。",
       "update": "更新",
       "later": "稍后"
     },
     "th": {
       "title": "มีอัปเดตใหม่",
-      "body": "ทัวร์ทีละขั้นใน การตั้งค่า › คู่มือ คอร์ดไมเนอร์ใน TUP LAB Pitch และการแก้ไขข้อบกพร่อง",
+      "body": "TUPS 3.2 พร้อมให้ใช้งานแล้ว",
       "update": "อัปเดต",
       "later": "ภายหลัง"
     },
     "vi": {
       "title": "Đã có bản cập nhật",
-      "body": "Các vòng hướng dẫn từng bước trong Cài đặt › Hướng dẫn, hợp âm thứ trong TUP LAB Pitch và các bản sửa lỗi.",
+      "body": "TUPS 3.2 đã ra mắt.",
       "update": "Cập nhật",
       "later": "Để sau"
     },
     "id": {
       "title": "Pembaruan tersedia",
-      "body": "Tur langkah demi langkah di Pengaturan › Panduan, akor minor di TUP LAB Pitch, dan perbaikan.",
+      "body": "TUPS 3.2 sudah hadir.",
       "update": "Perbarui",
       "later": "Nanti"
     },
     "ca": {
       "title": "Actualització disponible",
-      "body": "Recorreguts pas a pas a Configuració › Guia, acords menors a TUP LAB Pitch i correccions.",
+      "body": "Ja és aquí TUPS 3.2.",
       "update": "Actualitza",
       "later": "Més tard"
     },
     "zh_Hant": {
       "title": "有新版本",
-      "body": "設定 › 指南 中的分步導覽、TUP LAB Pitch 的小三和弦，以及問題修正。",
+      "body": "TUPS 3.2 現已推出。",
       "update": "更新",
       "later": "稍後"
     }
